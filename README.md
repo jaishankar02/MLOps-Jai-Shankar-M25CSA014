@@ -4,13 +4,13 @@
 **Date**: January 2026
 
 ## Introduction
-This repository contains the code and results for Assignment 1 of the DL-Ops Lab. The project provides a comprehensive evaluation of Deep Learning (ResNet-18, ResNet-50) and Machine Learning (SVM) models on the MNIST and FashionMNIST datasets. The primary focus is to analyze how architectural depth, hardware acceleration, and various hyperparameters impact classification accuracy and computational throughput (GFLOPs).
+This repository contains my submission for Assignment 1 of the DL-Ops Lab. In this project, I evaluated Deep Learning (ResNet-18, ResNet-50) and Machine Learning (SVM) models on the MNIST and FashionMNIST datasets. The goal was to analyze how architectural depth, hardware acceleration, and various hyperparameters impact classification accuracy and computational throughput (GFLOPs).
 
-Key aspects of this study include:
-- Training ResNet-18 and ResNet-50 from scratch.
-- Systematic hyperparameter sweeping (Batch Size, Optimizer, Learning Rate, Pinned Memory).
-- Comparison with traditional SVM classifiers.
-- Hardware benchmarking (CPU vs. GPU execution).
+### Objectives
+- Train ResNet-18 and ResNet-50 from scratch.
+- Perform a systematic hyperparameter sweep (Batch Size, Optimizer, Learning Rate, Pinned Memory).
+- Compare results with traditional SVM classifiers.
+- Benchmark hardware performance (CPU vs. GPU).
 
 ## Project Structure
 
@@ -47,6 +47,8 @@ The models were trained from scratch (`pretrained=False`) to observe the raw lea
 | 16 | Adam | 0.001 | False | 5 | 98.89 | 98.68 | 256.78 | 519.37 |
 | 32 | SGD | 0.001 | True | 5 | 98.87 | 98.70 | 115.74 | 228.78 |
 
+
+
 ### FashionMNIST Dataset: Full Hyperparameter Sweep
 
 | Batch | Opt. | LR | PinMem | Epochs | ResNet-18 Acc (%) | ResNet-50 Acc (%) | R-18 Time (s) | R-50 Time (s) |
@@ -62,6 +64,8 @@ The models were trained from scratch (`pretrained=False`) to observe the raw lea
 | 16 | SGD | 0.001 | False | 5 | 90.39 | 87.89 | 242.50 | 487.15 |
 | 16 | Adam | 0.001 | False | 5 | 90.86 | 86.84 | 270.98 | 557.89 |
 | **32** | **Adam** | **0.001** | **True** | **5** | **90.91** | **87.39** | **142.97** | **283.43** |
+
+
 
 ---
 
@@ -112,8 +116,20 @@ The SVM with an RBF kernel provides a respectable baseline (~97.92% on MNIST). H
 ### 1. MNIST (Best Model - ResNet-18, SGD, BS=16)
 ![MNIST Best Model](Q1A-Models-and-results/MNIST/Graphs/ResNet-18_BS16_SGD_LR0p001_PinFalse_Ep5.png)
 
+**MNIST Comparison Plots:**
+![MNIST Comp 1](Q1A-Models-and-results/MNIST/Comparision%20plots/comparison_plot_1.png)
+![MNIST Comp 2](Q1A-Models-and-results/MNIST/Comparision%20plots/comparison_plot_2.png)
+![MNIST Comp 3](Q1A-Models-and-results/MNIST/Comparision%20plots/comparison_plot_3.png)
+![MNIST Comp 4](Q1A-Models-and-results/MNIST/Comparision%20plots/comparison_plot_4.png)
+
 ### 2. FashionMNIST (Best Model - ResNet-18, Adam, BS=32)
 ![FashionMNIST Best Model](Q1A-Models-and-results/Fashion-MNIST/Graphs/ResNet-18_BS32_Adam_LR0p001_PinTrue_Ep5.png)
+
+**FashionMNIST Comparison Plots:**
+![F-MNIST Comp 1](Q1A-Models-and-results/Fashion-MNIST/Comparision%20plots/comparison_plot_1.png)
+![F-MNIST Comp 2](Q1A-Models-and-results/Fashion-MNIST/Comparision%20plots/comparison_plot_2.png)
+![F-MNIST Comp 3](Q1A-Models-and-results/Fashion-MNIST/Comparision%20plots/comparison_plot_3.png)
+![F-MNIST Comp 4](Q1A-Models-and-results/Fashion-MNIST/Comparision%20plots/comparison_plot_4.png)
 
 ### 3. Hardware Comparison: CPU vs GPU (ResNet-18, Adam)
 **CPU Performance:**
@@ -123,11 +139,13 @@ The SVM with an RBF kernel provides a respectable baseline (~97.92% on MNIST). H
 ![GPU Performance](Q2-Model-and-results/GPU/graphs/ResNet-18_Adam_cuda_graphs.png)
 
 **Direct Comparisons:**
-Below are the direct comparison plots found in the project:
+The following plots show the direct performance comparison between the configurations:
 
 ![Comparison Plot 1](Q2-Model-and-results/CPU/Comparision%20plots/comparison_plot_1.png)
 ![Comparison Plot 2](Q2-Model-and-results/CPU/Comparision%20plots/comparison_plot_2.png)
 ![Comparison Plot 3](Q2-Model-and-results/CPU/Comparision%20plots/comparison_plot_3.png)
+
+
 
 ### 4. SVM Results
 **SVM Accuracy (Val vs Test) - MNIST:**
