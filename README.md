@@ -1,7 +1,7 @@
 # DL-Ops Lab Assignment 1: Performance Analysis of ResNet and SVM
 
 **Author**: Jai Shankar Azad (M25CSA014)  
-**Date**: January 2026
+**Date**: January 2026  
 **Colab Notebook**: [Open in Colab](https://colab.research.google.com/drive/1NjDYhCgciKejpKsGn3M6SCF_VKZEx_Us?usp=sharing)
 
 ## Introduction
