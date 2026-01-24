@@ -16,6 +16,12 @@
             --text-main: #f8fafc;
             --text-dim: #94a3b8;
             --accent: #10b981;
+            
+            /* Brand Colors */
+            --colab: #f59e0b; /* Amber */
+            --colab-dark: #d97706;
+            --github: #334155; /* Slate */
+            --github-dark: #1e293b;
         }
 
         * {
@@ -106,24 +112,59 @@
             font-weight: 600;
         }
 
+        /* --- BUTTON STYLES --- */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
         .btn {
             display: inline-flex;
             align-items: center;
-            padding: 1rem 2rem;
+            justify-content: center;
+            padding: 0.8rem 1.5rem;
             background: var(--primary);
             color: white;
             text-decoration: none;
-            border-radius: 1rem;
+            border-radius: 0.75rem;
             font-weight: 600;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
-            margin-top: 1rem;
-            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+            border: 1px solid transparent;
         }
 
         .btn:hover {
-            background: var(--primary-dark);
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Colab Button Variant */
+        .btn-colab {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            box-shadow: none;
+        }
+        .btn-colab:hover {
+            background: var(--colab);
+            color: white;
+            border-color: var(--colab);
+        }
+
+        /* GitHub Button Variant */
+        .btn-github {
+            background: rgba(255, 255, 255, 0.05);
+            color: #e2e8f0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: none;
+        }
+        .btn-github:hover {
+            background: var(--text-main);
+            color: var(--bg);
+            border-color: var(--text-main);
         }
 
         .tag {
@@ -154,6 +195,8 @@
         @media (max-width: 600px) {
             header h1 { font-size: 2.5rem; }
             .container { padding: 2rem 1rem; }
+            .button-container { flex-direction: column; }
+            .btn { width: 100%; }
         }
     </style>
 </head>
@@ -187,7 +230,20 @@
                 • Learned the importance of data loader optimizations like <code>pin_memory</code> for efficient DMA transfers.
             </p>
 
-            <a href="M25CSA014_Jai_Shankar_Azad_Ass1.pdf" class="btn">📄 View Assignment Report</a>
+            <div class="button-container">
+                <a href="M25CSA014_Jai_Shankar_Azad_Ass1.pdf" target="_blank" class="btn">
+                    📄 View Report
+                </a>
+                
+                <a href="https://colab.research.google.com/drive/1NjDYhCgciKejpKsGn3M6SCF_VKZEx_Us?usp=sharing" target="_blank" class="btn btn-colab">
+                    🚀 View Colab
+                </a>
+
+                <a href="https://github.com/jaishankar02/MLOps-Jai-Shankar-M25CSA014" target="_blank" class="btn btn-github">
+                    💻 View GitHub
+                </a>
+            </div>
+
         </section>
 
         <footer>
