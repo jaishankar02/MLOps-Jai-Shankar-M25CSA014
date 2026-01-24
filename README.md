@@ -117,19 +117,13 @@ The SVM with an RBF kernel provides a respectable baseline (~97.92% on MNIST). H
 ![MNIST Best Model](Q1A-Models-and-results/MNIST/Graphs/ResNet-18_BS16_SGD_LR0p001_PinFalse_Ep5.png)
 
 **MNIST Comparison Plots:**
-![MNIST Comp 1](Q1A-Models-and-results/MNIST/Comparison_Plots/comparison_plot_1.png)
-![MNIST Comp 2](Q1A-Models-and-results/MNIST/Comparison_Plots/comparison_plot_2.png)
-![MNIST Comp 3](Q1A-Models-and-results/MNIST/Comparison_Plots/comparison_plot_3.png)
-![MNIST Comp 4](Q1A-Models-and-results/MNIST/Comparison_Plots/comparison_plot_4.png)
+![MNIST Comparison Plot](Q1A-Models-and-results/MNIST/Comparison_Plots/comparison_plot_1.png)
 
 ### 2. FashionMNIST (Best Model - ResNet-18, Adam, BS=32)
 ![FashionMNIST Best Model](Q1A-Models-and-results/Fashion-MNIST/Graphs/ResNet-18_BS32_Adam_LR0p001_PinTrue_Ep5.png)
 
 **FashionMNIST Comparison Plots:**
-![F-MNIST Comp 1](Q1A-Models-and-results/Fashion-MNIST/Comparison_Plots/comparison_plot_1.png)
-![F-MNIST Comp 2](Q1A-Models-and-results/Fashion-MNIST/Comparison_Plots/comparison_plot_2.png)
-![F-MNIST Comp 3](Q1A-Models-and-results/Fashion-MNIST/Comparison_Plots/comparison_plot_3.png)
-![F-MNIST Comp 4](Q1A-Models-and-results/Fashion-MNIST/Comparison_Plots/comparison_plot_4.png)
+![FashionMNIST Comparison Plot](Q1A-Models-and-results/Fashion-MNIST/Comparison_Plots/comparison_plot_1.png)
 
 ### 3. Hardware Comparison: CPU vs GPU (ResNet-18, Adam)
 **CPU Performance:**
