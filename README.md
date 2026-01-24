@@ -2,7 +2,8 @@
 
 **Author**: Jai Shankar Azad (M25CSA014)  
 **Date**: January 2026  
-**Colab Notebook**: [Open in Colab](https://colab.research.google.com/drive/1NjDYhCgciKejpKsGn3M6SCF_VKZEx_Us?usp=sharing)
+**Colab Notebook**: [Open in Colab](https://colab.research.google.com/drive/1NjDYhCgciKejpKsGn3M6SCF_VKZEx_Us?usp=sharing)  
+**GitHub Page**: [Visit Site](https://jaishankar02.github.io/MLOps-Jai-Shankar-M25CSA014/)
 
 ## Introduction
 This repository contains my submission for Assignment 1 of the DL-Ops Lab. In this project, I evaluated Deep Learning (ResNet-18, ResNet-50) and Machine Learning (SVM) models on the MNIST and FashionMNIST datasets. The goal was to analyze how architectural depth, hardware acceleration, and various hyperparameters impact classification accuracy and computational throughput (GFLOPs).
