@@ -1,179 +1,23 @@
-# DL-Ops Lab Assignment 1: Performance Analysis of ResNet and SVM
+# DL-Ops Course Assignments 🎓
 
-**Author**: Jai Shankar Azad (M25CSA014)  
-**Date**: January 2026
-**Colab Notebook**: [Open in Colab](https://colab.research.google.com/drive/1NjDYhCgciKejpKsGn3M6SCF_VKZEx_Us?usp=sharing)
-
-## Introduction
-This repository contains my submission for Assignment 1 of the DL-Ops Lab. In this project, I evaluated Deep Learning (ResNet-18, ResNet-50) and Machine Learning (SVM) models on the MNIST and FashionMNIST datasets. The goal was to analyze how architectural depth, hardware acceleration, and various hyperparameters impact classification accuracy and computational throughput (GFLOPs).
-
-### Objectives
-- Train ResNet-18 and ResNet-50 from scratch.
-- Perform a systematic hyperparameter sweep (Batch Size, Optimizer, Learning Rate, Pinned Memory).
-- Compare results with traditional SVM classifiers.
-- Benchmark hardware performance (CPU vs. GPU).
-
-## Project Structure
-
-The project is organized as follows:
-
-- **`Q1A-Models-and-results/`**: Contains Deep Learning experiments (ResNet-18/50) for MNIST and FashionMNIST.
-    - `MNIST/`: Code, Logs, and Graphs for MNIST.
-    - `Fashion-MNIST/`: Code, Logs, and Graphs for FashionMNIST.
-- **`Q1B-Models-and-results/`**: Contains SVM baseline experiments.
-    - `plots/`: Generated plots for SVM analysis.
-- **`Q2-Model-and-results/`**: Contains Hardware Benchmarking (CPU vs. GPU) results.
-    - `CPU/`: CPU-based training logs and graphs.
-    - `GPU/`: GPU-based training logs and graphs.
-- **`M25CSA014_Jai_Shankar_Azad_Ass1.ipynb`**: Main Jupyter Notebook containing all the code.
+**Jai Shankar Azad** | M25CSA014 | IIT Jodhpur  
+*Deep Learning Operations (DL-Ops) Lab*
 
 ---
 
-## Q1(a). Deep Learning Experimental Results
-The models were trained from scratch (`pretrained=False`) to observe the raw learning capacity of residual blocks on grayscale imagery.
+## ⚠️ Important: Branch Structure
 
-### MNIST Dataset: Full Hyperparameter Sweep
+**This repository uses a branch-based structure.** The code and reports for each specific assignment are stored in their own separate branches, not in the main branch.
 
-| Batch | Opt. | LR | PinMem | Epochs | ResNet-18 Acc (%) | ResNet-50 Acc (%) | R-18 Time (s) | R-50 Time (s) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 16 | Adam | 0.0001 | False | 3 | 98.87 | 97.27 | 152.80 | 314.45 |
-| 16 | Adam | 0.001 | False | 3 | 98.89 | 97.89 | 153.12 | 311.58 |
-| 16 | SGD | 0.0001 | False | 3 | 98.35 | 97.15 | 134.59 | 272.21 |
-| 16 | SGD | 0.001 | False | 3 | 98.62 | 98.43 | 136.26 | 271.07 |
-| 32 | Adam | 0.001 | False | 3 | 98.65 | 96.98 | 82.90 | 158.77 |
-| 32 | SGD | 0.001 | False | 3 | 98.78 | 98.40 | 72.85 | 139.14 |
-| 16 | Adam | 0.0001 | True | 3 | 98.73 | 97.61 | 149.76 | 309.99 |
-| 16 | Adam | 0.001 | True | 3 | 98.40 | 97.67 | 147.44 | 311.12 |
-| 16 | SGD | 0.0001 | True | 3 | 98.13 | 96.94 | 127.28 | 271.84 |
-| 16 | SGD | 0.001 | True | 3 | 98.99 | 98.44 | 128.37 | 268.03 |
-| 32 | Adam | 0.001 | True | 3 | 98.95 | 97.81 | 78.97 | 155.49 |
-| 32 | SGD | 0.001 | True | 3 | 98.86 | 98.09 | 69.08 | 138.10 |
-| 16 | Adam | 0.0001 | False | 5 | 98.94 | 98.09 | 254.39 | 522.62 |
-| 16 | Adam | 0.001 | False | 5 | 98.89 | 98.68 | 256.78 | 519.37 |
-| 16 | SGD | 0.0001 | False | 5 | 98.64 | 97.76 | 225.25 | 453.85 |
-| **16** | **SGD** | **0.001** | **False** | **5** | **99.09** | **98.62** | **223.63** | **448.68** |
-| 32 | Adam | 0.001 | False | 5 | 98.94 | 97.97 | 138.04 | 267.59 |
-| 32 | SGD | 0.001 | False | 5 | 98.87 | 98.49 | 122.31 | 233.57 |
-| 16 | Adam | 0.0001 | True | 5 | 98.94 | 98.45 | 247.33 | 518.44 |
-| 16 | Adam | 0.001 | True | 5 | 98.84 | 98.62 | 246.29 | 517.61 |
-| 16 | SGD | 0.0001 | True | 5 | 98.64 | 97.80 | 217.07 | 448.16 |
-| 16 | SGD | 0.001 | True | 5 | 98.93 | 98.67 | 216.98 | 448.49 |
-| 32 | Adam | 0.001 | True | 5 | 98.62 | 98.13 | 130.76 | 259.73 |
-| 32 | SGD | 0.001 | True | 5 | 98.87 | 98.70 | 115.74 | 228.78 |
+Please switch to the relevant branch to view the files for a specific assignment.
 
-
-
-### FashionMNIST Dataset: Full Hyperparameter Sweep
-
-| Batch | Opt. | LR | PinMem | Epochs | ResNet-18 Acc (%) | ResNet-50 Acc (%) | R-18 Time (s) | R-50 Time (s) |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 16 | Adam | 0.0001 | False | 3 | 89.66 | 86.34 | 171.32 | 356.70 |
-| 16 | Adam | 0.001 | False | 3 | 90.21 | 85.91 | 170.32 | 353.01 |
-| 16 | SGD | 0.0001 | False | 3 | 87.69 | 82.67 | 150.84 | 309.74 |
-| 16 | SGD | 0.001 | False | 3 | 89.61 | 88.16 | 152.72 | 309.41 |
-| 32 | Adam | 0.001 | False | 3 | 89.06 | 86.49 | 94.75 | 179.94 |
-| 32 | SGD | 0.001 | False | 3 | 89.52 | 86.99 | 84.96 | 161.72 |
-| 16 | Adam | 0.0001 | True | 3 | 89.57 | 87.19 | 165.34 | 352.72 |
-| 16 | Adam | 0.001 | True | 3 | 89.27 | 86.21 | 166.10 | 348.43 |
-| 16 | SGD | 0.0001 | True | 3 | 88.51 | 82.16 | 145.30 | 307.56 |
-| 16 | SGD | 0.001 | True | 3 | 89.03 | 86.21 | 145.09 | 308.27 |
-| 32 | Adam | 0.001 | True | 3 | 90.21 | 87.76 | 88.33 | 174.09 |
-| 32 | SGD | 0.001 | True | 3 | 88.70 | 86.54 | 80.20 | 155.88 |
-| 16 | Adam | 0.0001 | False | 5 | 89.61 | 88.77 | 268.73 | 568.41 |
-| 16 | Adam | 0.001 | False | 5 | 90.86 | 86.84 | 270.98 | 557.89 |
-| 16 | SGD | 0.0001 | False | 5 | 89.06 | 85.64 | 241.97 | 487.13 |
-| 16 | SGD | 0.001 | False | 5 | 90.39 | 87.89 | 242.50 | 487.15 |
-| 32 | Adam | 0.001 | False | 5 | 90.91 | 87.34 | 144.54 | 289.45 |
-| 32 | SGD | 0.001 | False | 5 | 90.34 | 88.27 | 127.06 | 252.34 |
-| 16 | Adam | 0.0001 | True | 5 | 90.56 | 88.17 | 260.31 | 556.18 |
-| 16 | Adam | 0.001 | True | 5 | 90.66 | 88.33 | 261.57 | 553.13 |
-| 16 | SGD | 0.0001 | True | 5 | 88.94 | 85.12 | 225.58 | 485.55 |
-| 16 | SGD | 0.001 | True | 5 | 90.17 | 89.11 | 225.49 | 481.73 |
-| **32** | **Adam** | **0.001** | **True** | **5** | **90.91** | **87.39** | **142.97** | **283.43** |
-| 32 | SGD | 0.001 | True | 5 | 90.01 | 88.84 | 123.66 | 248.81 |
-
-
+### 📂 How to Navigate
+| Assignment | Branch Name | Description |
+| :--- | :--- | :--- |
+| **Assignment 1** | [`Assignment_1`](https://github.com/jaishankar02/MLOps-Jai-Shankar-M25CSA014/tree/Assignment_1) | Performance Analysis: ResNet-18 vs ResNet-50 vs SVM on MNIST/Fashion-MNIST. |
+| **Assignment 2** | *Coming Soon* | *Pending Upload* |
 
 ---
 
-## Q1(b). SVM Classifier Results
-
-The SVM model serves as a baseline to demonstrate the advantage of spatial feature learning in CNNs compared to pixel-wise kernel methods.
-
-| Dataset | Kernel | C | Test Accuracy (%) | Train Time (ms) |
-| :--- | :--- | :---: | :---: | :---: |
-| **MNIST** | rbf | 1.0 | 97.92 | 132,410 |
-|  | poly | 1.0 | 96.45 | 168,320 |
-| **FashionMNIST** | rbf | 1.0 | 88.35 | 195,640 |
-|  | poly | 1.0 | 85.22 | 224,150 |
-
----
-
-## Q2. Hardware and Complexity Analysis
-
-The following table highlights the significant delta between CPU and GPU compute cycles.
-
-| Compute | Opt. | ResNet-18 Acc (%) | ResNet-50 Acc (%) | R-18 Time (ms) | R-50 Time (ms) | R-18 GFLOPs | R-50 GFLOPs |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **CPU** | SGD | 88.99 | 83.62 | 630,018.8 | 1,112,304.9 | 0.071 | 0.166 |
-| **CPU** | Adam | 89.78 | 88.12 | 763,720.1 | 1,304,599.4 | 0.071 | 0.166 |
-| **GPU** | SGD | 89.33 | 84.74 | 51,046.8 | 92,309.5 | 0.071 | 0.166 |
-| **GPU** | Adam | 90.79 | 87.56 | 60,977.2 | 114,125.4 | 0.071 | 0.166 |
-
----
-
-## In-Depth Analytical Discussion
-
-### Architectural Efficiency vs. Image Resolution
-One of the most notable outcomes is that **ResNet-18** consistently outperformed **ResNet-50** in accuracy across nearly all FashionMNIST configurations. Mathematically, ResNet-50 possesses more than double the GFLOPs (0.166 vs 0.071). However, since the input resolution is very low ($28 \times 28$), the deeper model likely encounters the "overfitting" or "degradation" problem earlier than a shallower network. The ResNet-50 architecture is designed for $224 \times 224$ images; when applied to MNIST, many of its deeper layers may be learning redundant or noise-related features.
-
-### Influence of Optimizers and Learning Rate
-The **Adam** optimizer generally yielded higher stability and better final accuracy compared to SGD. This is attributed to Adam's adaptive moment estimation, which adjusts the learning rate for each parameter individually. Conversely, **SGD** required a higher number of epochs to converge. Reducing the Learning Rate from $0.001$ to $0.0001$ resulted in a significant accuracy drop, indicating that $0.0001$ is too low to navigate the loss landscape effectively within 3-5 epochs.
-
-### Memory Management and Hardware Acceleration
-The use of `pin_memory=True` showed a consistent reduction in epoch time (approx. 5-7%). This is because pinned memory prevents the operating system from swapping the data to disk, allowing the GPU to use Direct Memory Access (DMA) to pull data from the RAM more efficiently. Combined with `USE_AMP` (Automatic Mixed Precision), which uses FP16 for calculations, we achieved a **12.5x speedup** on the GPU compared to the CPU.
-
-### CNN vs. Traditional Classifiers (SVM)
-The SVM with an RBF kernel provides a respectable baseline (~97.92% on MNIST). However, the training time for SVMs increases cubically with the size of the dataset. Deep Learning models, while having a high initial overhead, scale better to large datasets. Furthermore, the CNN's ability to preserve spatial hierarchies makes it fundamentally superior to the flattened-vector approach of the SVM for image tasks.
-
----
-
-## Results: Training and Validation Curves
-
-### 1. MNIST (Best Model - ResNet-18, SGD, BS=16)
-![MNIST Best Model](Q1A-Models-and-results/MNIST/Graphs/ResNet-18_BS16_SGD_LR0p001_PinFalse_Ep5.png)
-
-**MNIST Comparison Plots:**
-![MNIST Comparison Plot](Q1A-Models-and-results/MNIST/Comparison_Plots/comparison_plot_1.png)
-
-### 2. FashionMNIST (Best Model - ResNet-18, Adam, BS=32)
-![FashionMNIST Best Model](Q1A-Models-and-results/Fashion-MNIST/Graphs/ResNet-18_BS32_Adam_LR0p001_PinTrue_Ep5.png)
-
-**FashionMNIST Comparison Plots:**
-![FashionMNIST Comparison Plot](Q1A-Models-and-results/Fashion-MNIST/Comparison_Plots/comparison_plot_1.png)
-
-### 3. Hardware Comparison: CPU vs GPU (ResNet-18, Adam)
-**CPU Performance:**
-![CPU Performance](Q2-Model-and-results/CPU/Graphs/ResNet-18_Adam_CPU_graphs.png)
-
-**GPU Performance:**
-![GPU Performance](Q2-Model-and-results/GPU/graphs/ResNet-18_Adam_cuda_graphs.png)
-
-**Direct Comparisons:**
-The following plots show the direct performance comparison between the configurations:
-
-![Comparison Plot 1](Q2-Model-and-results/CPU/Comparison_Plots/comparison_plot_1.png)
-![Comparison Plot 2](Q2-Model-and-results/CPU/Comparison_Plots/comparison_plot_2.png)
-![Comparison Plot 3](Q2-Model-and-results/CPU/Comparison_Plots/comparison_plot_3.png)
-
-
-
-### 4. SVM Results
-**SVM Accuracy (Val vs Test) - MNIST:**
-![SVM MNIST](Q1B-Models-and-results/plots/mnist_784_accuracy_trends.png)
-
-**SVM Accuracy (Val vs Test) - FashionMNIST:**
-![SVM FashionMNIST](Q1B-Models-and-results/plots/Fashion-MNIST_accuracy_trends.png)
-
-**Accuracy Comparison for different Configurations:**
-![Comparison](Q1B-Models-and-results/plots/test_accuracy_bar.png)
+### Contact
+📧 m25csa014@iitj.ac.in
