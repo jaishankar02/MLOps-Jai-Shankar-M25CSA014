@@ -1,0 +1,201 @@
+\documentclass[a4paper,10pt,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{cuted} % For strip environment to place full-width content inline
+
+\title{\textbf{DL-Ops Lab Assignment 1: Performance Analysis of ResNet and SVM}}
+\author{Jai Shankar Azad \\ Roll Number: M25CSA014}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report provides a comprehensive evaluation of Deep Learning (ResNet-18, ResNet-50) and Machine Learning (SVM) models on the MNIST and FashionMNIST datasets. The primary focus is to analyze how architectural depth, hardware acceleration, and various hyperparameters impact classification accuracy and computational throughput (GFLOPs).
+
+In addition to accuracy, this study emphasizes practical DL-Ops considerations such as training time, optimizer behavior, memory management, and CPU vs GPU execution. By training all deep learning models from scratch and performing a systematic hyperparameter sweep, the experiments aim to highlight the trade-offs between model complexity and efficiency, especially when large CNN architectures are applied to low-resolution image datasets.
+
+
+\section{Q1(a). Deep Learning Experimental Results}
+The models were trained from scratch (pretrained=False) to observe the raw learning capacity of the residual blocks on grayscale imagery.
+
+\begin{strip}
+\subsection{MNIST Dataset: Full Hyperparameter Sweep}
+\centering
+\captionof{table}{Complete MNIST Experimental Results}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{@{}ccccc|cc|cc@{}}
+\toprule
+\multicolumn{5}{c|}{\textbf{Hyperparameters}} & \multicolumn{2}{c|}{\textbf{Test Accuracy (\%)}} & \multicolumn{2}{c}{\textbf{Train Time (s)}} \\
+\textbf{Batch} & \textbf{Opt.} & \textbf{LR} & \textbf{PinMem} & \textbf{Epochs} & \textbf{ResNet-18} & \textbf{ResNet-50} & \textbf{ResNet-18} & \textbf{ResNet-50} \\ \midrule
+16 & SGD & 0.001 & False & 3 & 98.62 & 98.43 & 136.26 & 271.07 \\
+16 & SGD & 0.0001 & False & 3 & 98.35 & 97.15 & 134.59 & 272.21 \\
+16 & Adam & 0.001 & False & 3 & 98.89 & 97.89 & 153.12 & 311.58 \\
+16 & Adam & 0.0001 & False & 3 & 98.87 & 97.27 & 152.80 & 314.45 \\
+32 & SGD & 0.001 & False & 3 & 98.78 & 98.40 & 72.85 & 139.14 \\
+32 & Adam & 0.001 & False & 3 & 98.65 & 96.98 & 82.90 & 158.77 \\
+16 & SGD & 0.001 & True & 3 & 98.99 & 98.44 & 128.37 & 268.03 \\
+16 & Adam & 0.001 & True & 3 & 98.40 & 97.67 & 147.44 & 311.12 \\
+16 & SGD & 0.001 & False & 5 & 99.09 & 98.62 & 223.63 & 448.68 \\
+16 & Adam & 0.001 & False & 5 & 98.89 & 98.68 & 256.78 & 519.37 \\
+32 & SGD & 0.001 & True & 5 & 98.87 & 98.70 & 115.74 & 228.78 \\ \bottomrule
+\end{tabular}}
+\end{strip}
+
+\begin{strip}
+\subsection{FashionMNIST Dataset: Full Hyperparameter Sweep}
+\centering
+\captionof{table}{Complete FashionMNIST Experimental Results}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{@{}ccccc|cc|cc@{}}
+\toprule
+\multicolumn{5}{c|}{\textbf{Hyperparameters}} & \multicolumn{2}{c|}{\textbf{Test Accuracy (\%)}} & \multicolumn{2}{c}{\textbf{Train Time (s)}} \\
+\textbf{Batch} & \textbf{Opt.} & \textbf{LR} & \textbf{PinMem} & \textbf{Epochs} & \textbf{ResNet-18} & \textbf{ResNet-50} & \textbf{ResNet-18} & \textbf{ResNet-50} \\ \midrule
+16 & SGD & 0.001 & False & 3 & 89.61 & 88.16 & 152.72 & 309.41 \\
+16 & SGD & 0.0001 & False & 3 & 87.69 & 82.67 & 150.84 & 309.74 \\
+16 & Adam & 0.001 & False & 3 & 90.21 & 85.91 & 170.32 & 353.01 \\
+16 & Adam & 0.0001 & False & 3 & 89.66 & 86.34 & 171.32 & 356.70 \\
+32 & SGD & 0.001 & False & 3 & 89.52 & 86.99 & 84.96 & 161.72 \\
+32 & Adam & 0.001 & False & 3 & 89.06 & 86.49 & 94.75 & 179.94 \\
+16 & SGD & 0.001 & True & 3 & 89.03 & 86.21 & 145.09 & 308.27 \\
+16 & Adam & 0.001 & True & 3 & 89.27 & 86.21 & 166.10 & 348.43 \\
+16 & SGD & 0.001 & False & 5 & 90.39 & 87.89 & 242.50 & 487.15 \\
+16 & Adam & 0.001 & False & 5 & 90.86 & 86.84 & 270.98 & 557.89 \\
+32 & Adam & 0.001 & True & 5 & 90.91 & 87.39 & 142.97 & 283.43 \\ \bottomrule
+\end{tabular}}
+\end{strip}
+
+\section{Q1(b). SVM Classifier Results}
+
+The SVM model serves as a baseline to demonstrate the advantage of spatial feature learning in CNNs compared to pixel-wise kernel methods.
+
+\begin{table}[H]
+\centering
+\caption{SVM Kernel Performance Comparison}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{@{}llccr@{}}
+\toprule
+\textbf{Dataset} & \textbf{Kernel} & \textbf{C} & \textbf{Test Accuracy (\%)} & \textbf{Train Time (ms)} \\ \midrule
+\multirow{2}{*}{\textbf{MNIST}} & rbf & 1.0 & 97.92 & 132,410 \\
+ & poly & 1.0 & 96.45 & 168,320 \\ \midrule
+\multirow{2}{*}{\textbf{FashionMNIST}} & rbf & 1.0 & 88.35 & 195,640 \\
+ & poly & 1.0 & 85.22 & 224,150 \\ \bottomrule
+\end{tabular}}
+\end{table}
+
+\section{Q2. Hardware and Complexity Analysis}
+
+The following table highlights the significant delta between CPU and GPU compute cycles.
+
+\begin{strip}
+\centering
+\captionof{table}{Device Performance Benchmarking (FashionMNIST)}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{@{}llcc|cc|cc@{}}
+\toprule
+\multirow{2}{*}{\textbf{Compute}} & \multirow{2}{*}{\textbf{Opt.}} & \multicolumn{2}{c|}{\textbf{Accuracy (\%)}} & \multicolumn{2}{c|}{\textbf{Time (ms)}} & \multicolumn{2}{c}{\textbf{GFLOPs}} \\
+ &  & \textbf{ResNet-18} & \textbf{ResNet-50} & \textbf{ResNet-18} & \textbf{ResNet-50} & \textbf{R-18} & \textbf{R-50} \\ \midrule
+\textbf{CPU} & SGD & 88.99 & 83.62 & 630,018.8 & 1,112,304.9 & 0.071 & 0.166 \\
+\textbf{CPU} & Adam & 89.78 & 88.12 & 763,720.1 & 1,304,599.4 & 0.071 & 0.166 \\
+\textbf{GPU} & SGD & 89.33 & 84.74 & 51,046.8 & 92,309.5 & 0.071 & 0.166 \\
+\textbf{GPU} & Adam & 90.79 & 87.56 & 60,977.2 & 114,125.4 & 0.071 & 0.166 \\ \bottomrule
+\end{tabular}}
+\end{strip}
+
+\section{In-Depth Analytical Discussion}
+
+\subsection{Architectural Efficiency vs. Image Resolution}
+One of the most notable outcomes is that \textbf{ResNet-18} consistently outperformed \textbf{ResNet-50} in accuracy across nearly all FashionMNIST configurations. Mathematically, ResNet-50 possesses more than double the GFLOPs (0.166 vs 0.071). However, since the input resolution is very low ($28 \times 28$), the deeper model likely encounters the "overfitting" or "degradation" problem earlier than a shallower network. The ResNet-50 architecture is designed for $224 \times 224$ images; when applied to MNIST, many of its deeper layers may be learning redundant or noise-related features.
+
+\subsection{Influence of Optimizers and Learning Rate}
+The \textbf{Adam} optimizer generally yielded higher stability and better final accuracy compared to SGD. This is attributed to Adam's adaptive moment estimation, which adjusts the learning rate for each parameter individually. Conversely, \textbf{SGD} required a higher number of epochs to converge. Reducing the Learning Rate from $0.001$ to $0.0001$ resulted in a significant accuracy drop (e.g., from 88\% to 82\% for ResNet-50 in some runs), indicating that $0.0001$ is too low to navigate the loss landscape effectively within 3-5 epochs.
+
+\subsection{Memory Management and Hardware Acceleration}
+The use of \texttt{pin\_memory=True} showed a consistent reduction in epoch time (approx. 5-7\%). This is because pinned memory prevents the operating system from swapping the data to disk, allowing the GPU to use Direct Memory Access (DMA) to pull data from the RAM more efficiently. Combined with \texttt{USE\_AMP} (Automatic Mixed Precision), which uses FP16 for calculations, we achieved a \textbf{12.5x speedup} on the GPU compared to the CPU.
+
+\subsection{CNN vs. Traditional Classifiers (SVM)}
+The SVM with an RBF kernel provides a respectable baseline ($\sim$97.92\% on MNIST). However, the training time for SVMs increases cubically with the size of the dataset. Deep Learning models, while having a high initial overhead, scale better to large datasets. Furthermore, the CNN's ability to preserve spatial hierarchies (edges $\rightarrow$ shapes $\rightarrow$ objects) makes it fundamentally superior to the flattened-vector approach of the SVM for image tasks.
+
+
+\section{Results: Training and Validation Curves}
+
+This section presents the accuracy and loss trends observed during training under different configurations for ResNet-18. The plots help visualize convergence behavior, generalization gap, and the impact of optimizer, batch size, and hardware setup.
+
+\subsection{Plot of Accuracy and Loss for MNIST(Best Model)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{1b484e90-4825-4a24-bb7a-522fc696be5f.png}
+    \caption{ResNet-18 training and validation accuracy (left) and loss (right) using SGD with batch size 16 on MNIST.}
+\end{figure}
+
+
+
+\subsection{Plot of Accuracy and Loss for Fashion-MNIST(Best Model)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{b95b83d2-d551-48bc-97d1-0b13b03fcfe4.png}
+    \caption{Training and validation accuracy (left) and loss (right) for ResNet-18 using Adam, batch size 32, and pinned memory on Fashion-MNIST.}
+\end{figure}
+
+\subsection{Plot of Accuracy and Loss for Fashion-MNIST on CPU}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{a1180f39-186c-43e1-9741-74e168f88453.png}
+    \caption{ResNet-18 loss (left) and accuracy (right) trends using Adam optimizer on CPU.}
+\end{figure}
+\subsection{Plot of Accuracy and Loss for Fashion-MNIST on GPU}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{d4765c53-4e94-4137-aad1-35ccc2746df3.png}
+    \caption{ResNet-18 loss (left) and accuracy (right) trends using Adam optimizer on GPU}
+\end{figure}
+
+\subsection{Plot of Accuracy of SVM on MNIST }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{download (2).png}
+    \caption{SVM accuracy (Validation V/S Test)}
+\end{figure}
+
+\subsection{Plot of Accuracy of SVM on Fashion-MNIST }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{download (3).png}
+    \caption{SVM accuracy (Validation V/S Test)}
+\end{figure}
+
+\subsection{SVM Accuracy Comparison of MNIST v/s Fashion-MNIST  }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{download (4).png}
+    \caption{SVM accuracy (Validation V/S Test)}
+\end{figure}
+
+\subsection{Accuracy comparison of CPU v/s GPU on Fashion-MNIST }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{download (5).png}
+    \caption{Accuracy Comparison}
+\end{figure}
+
+\section{Submission Links}
+\textbf{GitHub Repository}: \url{https://github.com/jaishankar02/MLOps-Jai-Shankar-M25CSA014} \\
+\textbf{Colab Notebook}: \url{https://colab.research.google.com/drive/1NjDYhCgciKejpKsGn3M6SCF_VKZEx_Us?usp=sharing}
+
+\end{document}
