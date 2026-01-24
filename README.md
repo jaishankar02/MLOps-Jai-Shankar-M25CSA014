@@ -151,7 +151,3 @@ The following plots show the direct performance comparison between the configura
 
 **Accuracy Comparison for different Configurations:**
 ![Comparison](Q1B-Models-and-results/plots/test_accuracy_bar.png)
-
-## Submission Links
-- **GitHub Repository**: [Repo Link](https://github.com/jaishankar02/MLOps-Jai-Shankar-M25CSA014)
-- **Colab Notebook**: [Colab Link](https://colab.research.google.com/drive/1NjDYhCgciKejpKsGn3M6SCF_VKZEx_Us?usp=sharing)
