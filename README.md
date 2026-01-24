@@ -5,11 +5,18 @@
 
 ---
 
-## ⚠️ Important: Branch Structure
+## 🌟 Live Portfolio Website
 
-**This repository uses a branch-based structure.** The code and reports for each specific assignment are stored in their own separate branches, not in the main branch.
+The **main** branch of this repository hosts my DL-Ops portfolio website. This site serves as a central dashboard containing direct links to all assignment reports, Colab notebooks, and source code repositories.
 
-Please switch to the relevant branch to view the files for a specific assignment.
+👉 **Visit the Live Page:** [**https://jaishankar02.github.io/MLOps-Jai-Shankar-M25CSA014/**](https://jaishankar02.github.io/MLOps-Jai-Shankar-M25CSA014/)
+
+---
+
+## ⚠️ Branch Structure
+
+**This repository uses a branch-based structure for code organization.**
+While the `main` branch contains the portfolio website, the actual code, experiments, and implementation for each specific assignment are stored in their own separate branches.
 
 ### 📂 How to Navigate
 | Assignment | Branch Name | Description |
