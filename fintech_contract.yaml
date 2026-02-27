@@ -1,0 +1,45 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:fintech:fraud-detection-logs
+version: 1.0.0
+
+# 1. OWNERSHIP & GOVERNANCE
+info:
+  title: "Financial Transaction Log"
+  description: |
+    Real-time transaction feed for Fraud Detection.
+    Strictly enforces Account ID format to prevent silent model failures.
+  owner: "Core Banking Team"
+  classification: restricted
+
+# 2. SCHEMA DEFINITION
+schema:
+  type: object
+  properties:
+    source_account_id:
+      type: string
+      description: "Source Account ID. Must be exactly 10 uppercase alphanumeric chars."
+      pattern: "^[A-Z0-9]{10}$"
+      # physical_mapping: acct_src
+
+    destination_account_id:
+      type: string
+      description: "Destination Account ID."
+      # physical_mapping: acct_dest
+
+    transaction_timestamp:
+      type: string
+      format: date-time
+      # physical_mapping: tx_ts
+
+  required: [source_account_id, destination_account_id, transaction_timestamp]
+
+# 3. DATA QUALITY RULES
+quality:
+  - name: source_account_pattern_check
+    type: validity
+    # Regex ensures exactly 10 chars, A-Z and 0-9 only.
+    expression: "REGEXP_LIKE(source_account_id, '^[A-Z0-9]{10}$')"
+    threshold: "100%"
+    # HARD CIRCUIT BREAKER as requested
+    enforcement: hard
+    description: "Blocks pipeline if legacy 8-char IDs are detected to prevent Fraud Model failure."

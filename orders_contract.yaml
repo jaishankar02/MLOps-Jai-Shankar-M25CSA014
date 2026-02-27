@@ -1,0 +1,46 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:ecommerce:flash-sale-orders
+version: 1.0.0
+
+# 1. OWNERSHIP & GOVERNANCE
+info:
+  title: "Flash Sale Real-Time Orders"
+  description: |
+    Real-time stream of order events for the Black Friday Marketing Dashboard.
+    Ensures valid status codes and positive order totals.
+  owner: "Checkout Platform Team"
+  contact:
+    name: "Marketing Data Steward"
+    email: "marketing-data@ecommerce.com"
+
+# 2. SCHEMA DEFINITION
+schema:
+  type: object
+  properties:
+    order_total_usd:
+      type: number
+      description: "Total order value in USD. Must be positive."
+      minimum: 0
+      # physical_mapping: o_total
+
+    order_status:
+      type: string
+      enum: [PAID, SHIPPED, CANCELLED]
+      description: "Logical status mapped from physical codes (2=PAID, 5=SHIPPED, 9=CANCELLED)."
+      # physical_mapping: status_code
+
+  required: [order_total_usd, order_status]
+
+# 3. DATA QUALITY RULES
+quality:
+  - name: total_non_negative
+    type: validity
+    expression: "order_total_usd >= 0"
+    threshold: "100%"
+
+  - name: status_valid_enum
+    type: validity
+    # Rejects any record with unmapped status codes (e.g., 7)
+    expression: "order_status IN ('PAID', 'SHIPPED', 'CANCELLED')"
+    threshold: "100%"
+    enforcement: hard

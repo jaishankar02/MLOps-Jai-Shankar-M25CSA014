@@ -1,0 +1,46 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:iot:smart-thermostat
+version: 1.0.0
+
+# 1. OWNERSHIP & GOVERNANCE
+info:
+  title: "Smart Thermostat Telemetry"
+  description: |
+    Minutely temperature and battery health readings.
+    Filters out sensor failure defaults (9999C) and invalid battery levels.
+  owner: "IoT Device Engineering"
+
+# 2. SCHEMA DEFINITION
+schema:
+  type: object
+  properties:
+    device_id:
+      type: string
+      description: "Unique device serial number."
+      # physical_mapping: dev_id
+
+    temperature_celsius:
+      type: number
+      description: "Ambient temperature reading in Celsius."
+      # physical_mapping: temp_c
+
+    battery_level:
+      type: number
+      description: "Battery charge percentage (0.0 to 1.0)."
+      # physical_mapping: batt_lvl
+
+  required: [device_id, temperature_celsius]
+
+# 3. DATA QUALITY RULES
+quality:
+  - name: temperature_safe_range
+    type: validity
+    # Rejects 9999 failure codes and extreme outliers
+    expression: "temperature_celsius >= -30 AND temperature_celsius <= 60"
+    threshold: "100%"
+
+  - name: battery_valid_range
+    type: validity
+    # Ensures reading is a valid percentage
+    expression: "battery_level >= 0.0 AND battery_level <= 1.0"
+    threshold: "100%"
