@@ -1,0 +1,54 @@
+# Task 9: Production Docker Image - Evaluation Only
+FROM python:3.9-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV HF_HOME=/app/cache
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy only the evaluation script (self-contained)
+COPY src/evaluate_hub.py ./src/
+
+RUN mkdir -p /app/cache /app/results /app/data_cache
+
+ENV MODEL_ID="Jaishankar02/distilbert-reviews-genres"
+ENV GENRES="romance"
+ENV SAMPLES_PER_GENRE=1000
+
+COPY <<'EOF' /app/entrypoint.sh
+#!/bin/bash
+set -e
+
+echo "=========================================="
+echo "Task 9: Production Evaluation Container"
+echo "=========================================="
+echo ""
+echo "Model ID: $MODEL_ID"
+echo ""
+
+if [ "$MODEL_ID" = "YOUR_USERNAME/book-sentiment-distilbert" ]; then
+    echo "ERROR: Please set MODEL_ID environment variable"
+    exit 1
+fi
+
+echo "Starting evaluation..."
+python src/evaluate_hub.py --model-id "$MODEL_ID"
+
+echo ""
+echo "Evaluation complete!"
+cp hub_evaluation_results.json /app/results/ 2>/dev/null || true
+echo "=========================================="
+echo "RESULTS:"
+cat hub_evaluation_results.json 2>/dev/null || echo "No results file found"
+echo "=========================================="
+EOF
+
+RUN chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]

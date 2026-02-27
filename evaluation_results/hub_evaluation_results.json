@@ -1,0 +1,18 @@
+{
+  "accuracy": 0.2125984251968504,
+  "f1_score": 0.08832315059106408,
+  "precision": 0.8316220472440945,
+  "recall": 0.2125984251968504,
+  "loss": 4.0201824605464935,
+  "num_samples": 127,
+  "timestamp": "2026-02-27T09:50:00.624878",
+  "model_id": "Jaishankar02/distilbert-reviews-genres",
+  "hub_url": "https://huggingface.co/Jaishankar02/distilbert-reviews-genres",
+  "dataset": {
+    "source": "goodreads",
+    "genres": [
+      "romance"
+    ],
+    "samples_per_genre": 1000
+  }
+}

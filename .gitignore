@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Data and cache (large files)
+data_cache/
+*.gz
+*.json.gz
+
+# Training outputs (large model files)
+train_model/
+training_results/
+*.safetensors
+*.bin
+checkpoint-*/
+
+# Evaluation results (keep example)
+evaluation_results/*
+!evaluation_results/hub_evaluation_results.json
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.env
+.env.local
+
+# Docker
+.dockerignore
