@@ -1,0 +1,36 @@
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data/cifar-10-python.tar.gz
+100%|██████████| 170498071/170498071 [00:14<00:00, 11457995.42it/s]
+Extracting ./data/cifar-10-python.tar.gz to ./data
+Files already downloaded and verified
+Ep 29/30:  20%|█▉        | 77/391 [00:11<00:45,  6.90it/s] 
+Ep 01 | Loss 2.1318 | Acc 30.89%
+Ep 02 | Loss 1.5018 | Acc 44.94%
+Ep 03 | Loss 1.2953 | Acc 53.08%
+Ep 04 | Loss 1.1557 | Acc 58.94%
+Ep 05 | Loss 1.0546 | Acc 62.80%
+Ep 06 | Loss 0.9848 | Acc 65.61%
+Ep 07 | Loss 0.9272 | Acc 67.67%
+Ep 08 | Loss 0.8925 | Acc 68.83%
+Ep 09 | Loss 0.8539 | Acc 70.53%
+Ep 10 | Loss 0.8381 | Acc 70.91%
+Ep 11 | Loss 0.8160 | Acc 71.79%
+Ep 12 | Loss 0.7911 | Acc 72.59%
+Ep 13 | Loss 0.7831 | Acc 72.85%
+Ep 14 | Loss 0.7771 | Acc 73.05%
+Ep 15 | Loss 0.7530 | Acc 74.08%
+Ep 16 | Loss 0.5694 | Acc 80.20%
+Ep 17 | Loss 0.5106 | Acc 82.36%
+Ep 18 | Loss 0.4868 | Acc 83.11%
+Ep 19 | Loss 0.4697 | Acc 83.81%
+Ep 20 | Loss 0.4548 | Acc 84.16%
+Ep 21 | Loss 0.4410 | Acc 84.67%
+Ep 22 | Loss 0.4338 | Acc 85.01%
+Ep 23 | Loss 0.3962 | Acc 86.32%
+Ep 24 | Loss 0.3842 | Acc 86.76%
+Ep 25 | Loss 0.3785 | Acc 86.93%
+Ep 26 | Loss 0.3767 | Acc 86.90%
+Ep 27 | Loss 0.3685 | Acc 87.25%
+Ep 28 | Loss 0.3654 | Acc 87.40%

@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "py313h06a4308_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64/",
+  "constrains": [
+    "typer-cli 0.20.0.*",
+    "typer-slim 0.20.0.*"
+  ],
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313",
+    "typer-slim-standard 0.20.0 py313h06a4308_1"
+  ],
+  "fn": "typer-0.20.0-py313h06a4308_1.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "d9b03aa4048c711087209d7c35e3fb32",
+  "name": "typer",
+  "platform": "linux",
+  "sha256": "abf3e9b5820c78d1ca3d41b91f9b7b67d13d3e6c3f2892cc10f6f2361b3f0c3f",
+  "size": 157493,
+  "subdir": "linux-64",
+  "timestamp": 1771513026000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/typer-0.20.0-py313h06a4308_1.conda",
+  "version": "0.20.0"
+}

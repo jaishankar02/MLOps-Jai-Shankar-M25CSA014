@@ -1,0 +1,11 @@
+prefix=/csehome/m25csa014/Dlops_ass5/myconda
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libidn2
+Description: Library implementing IDNA2008 and TR46
+Version: 2.3.8
+Cflags: -I${includedir}
+Libs: -L${libdir} -lidn2
+Libs.private: -L/csehome/m25csa014/Dlops_ass5/myconda/lib -liconv -R/csehome/m25csa014/Dlops_ass5/myconda/lib -L/csehome/m25csa014/Dlops_ass5/myconda/lib -lunistring -R/csehome/m25csa014/Dlops_ass5/myconda/lib

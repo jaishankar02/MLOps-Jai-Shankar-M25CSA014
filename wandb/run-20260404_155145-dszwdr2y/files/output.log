@@ -1,0 +1,83 @@
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+[I 2026-04-04 15:51:48,013] A new study created in memory with name: no-name-127277e1-09f7-457c-82c5-f3b217c828ee
+Best trial: 0. Best value: 0.8954:  50%|█████     | 10/20 [31:03<30:47, 184.70s/it] 
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 15:54:59,909] Trial 0 finished with value: 0.8954 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.2, 'lr': 0.0015958573588141277}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 15:58:09,187] Trial 1 finished with value: 0.8864 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.15000000000000002, 'lr': 0.0003124565071260876}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:01:18,437] Trial 2 finished with value: 0.87 and parameters: {'rank': 2, 'alpha': 4, 'dropout': 0.2, 'lr': 0.00011992724522955161}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:04:24,022] Trial 3 finished with value: 0.8932 and parameters: {'rank': 16, 'alpha': 2, 'dropout': 0.2, 'lr': 0.0005595074635794797}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:07:30,243] Trial 4 finished with value: 0.8822 and parameters: {'rank': 16, 'alpha': 4, 'dropout': 0.15000000000000002, 'lr': 0.0002060924941320236}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:10:34,374] Trial 5 finished with value: 0.8888 and parameters: {'rank': 2, 'alpha': 4, 'dropout': 0.0, 'lr': 0.0003570478920909981}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:13:35,610] Trial 6 finished with value: 0.89 and parameters: {'rank': 8, 'alpha': 16, 'dropout': 0.0, 'lr': 0.0047499747713783975}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:16:41,518] Trial 7 finished with value: 0.8868 and parameters: {'rank': 16, 'alpha': 8, 'dropout': 0.1, 'lr': 0.0001573468512939367}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:19:50,246] Trial 8 finished with value: 0.8942 and parameters: {'rank': 2, 'alpha': 8, 'dropout': 0.3, 'lr': 0.0006342770438858341}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:22:51,580] Trial 9 finished with value: 0.8756 and parameters: {'rank': 8, 'alpha': 2, 'dropout': 0.0, 'lr': 0.00015251209898002935}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:26:00,378] Trial 10 finished with value: 0.8922 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.3, 'lr': 0.0019719928560470463}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:29:09,151] Trial 11 finished with value: 0.8924 and parameters: {'rank': 2, 'alpha': 8, 'dropout': 0.3, 'lr': 0.00121309517600858}. Best is trial 0 with value: 0.8954.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:32:18,079] Trial 12 finished with value: 0.8968 and parameters: {'rank': 4, 'alpha': 8, 'dropout': 0.25, 'lr': 0.0011195323015142373}. Best is trial 12 with value: 0.8968.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:37:36,073] Trial 13 finished with value: 0.8886 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.25, 'lr': 0.001602379352195263}. Best is trial 12 with value: 0.8968.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:40:44,203] Trial 14 finished with value: 0.8916 and parameters: {'rank': 4, 'alpha': 8, 'dropout': 0.2, 'lr': 0.0031824138118659146}. Best is trial 12 with value: 0.8968.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:43:52,485] Trial 15 finished with value: 0.8932 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.1, 'lr': 0.0010333783237950903}. Best is trial 12 with value: 0.8968.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:47:00,276] Trial 16 finished with value: 0.8898 and parameters: {'rank': 4, 'alpha': 8, 'dropout': 0.25, 'lr': 0.0022628312914268673}. Best is trial 12 with value: 0.8968.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:50:08,508] Trial 17 finished with value: 0.8972 and parameters: {'rank': 4, 'alpha': 2, 'dropout': 0.25, 'lr': 0.0010116579565348607}. Best is trial 17 with value: 0.8972.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:53:16,952] Trial 18 finished with value: 0.8978 and parameters: {'rank': 4, 'alpha': 2, 'dropout': 0.25, 'lr': 0.0008346886077810816}. Best is trial 18 with value: 0.8978.
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 16:56:22,937] Trial 19 finished with value: 0.8914 and parameters: {'rank': 8, 'alpha': 2, 'dropout': 0.25, 'lr': 0.0004306800244227627}. Best is trial 18 with value: 0.8978.
+
+Best params: {'rank': 4, 'alpha': 2, 'dropout': 0.25, 'lr': 0.0008346886077810816}
+Best val acc: 89.78%
+
+Training best config for full epochs …
+Files already downloaded and verified
+Files already downloaded and verified
+Ep 01 ValAcc 87.48%
+Ep 02 ValAcc 88.44%
+Ep 03 ValAcc 87.90%
+Ep 04 ValAcc 88.64%
+Ep 05 ValAcc 88.70%
+Ep 06 ValAcc 89.02%
+Ep 07 ValAcc 88.96%
+Ep 08 ValAcc 89.12%
+Ep 09 ValAcc 88.88%
+Ep 10 ValAcc 89.20%
+Test Accuracy (Optuna Best): 90.01%

@@ -1,0 +1,62 @@
+{
+  "name": "libexpat",
+  "version": "2.7.4",
+  "build": "h7354ed3_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "subdir": "linux-64",
+  "fn": "libexpat-2.7.4-h7354ed3_0.conda",
+  "md5": "04be005097756bc24b1929f4646506ae",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libexpat-2.7.4-h7354ed3_0.conda",
+  "sha256": "aaeb0b0bc0ca292600e19979b38afe692bde0a8bde24031d1e1ddced76b5e46d",
+  "arch": "x86_64",
+  "platform": "linux",
+  "depends": [
+    "__glibc >=2.28,<3.0.a0",
+    "libgcc >=14",
+    "libstdcxx >=14"
+  ],
+  "constrains": [
+    "expat 2.7.4.*"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "timestamp": 1770062545000,
+  "size": 124967,
+  "requested_spec": "pkgs/main/linux-64::libexpat==2.7.4=h7354ed3_0",
+  "package_tarball_full_path": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/libexpat-2.7.4-h7354ed3_0.conda",
+  "extracted_package_dir": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/libexpat-2.7.4-h7354ed3_0",
+  "files": [
+    "include/expat.h",
+    "include/expat_config.h",
+    "include/expat_external.h",
+    "lib/cmake/expat-2.7.4/expat-config-version.cmake",
+    "lib/cmake/expat-2.7.4/expat-config.cmake",
+    "lib/cmake/expat-2.7.4/expat-release.cmake",
+    "lib/cmake/expat-2.7.4/expat.cmake",
+    "lib/libexpat.so",
+    "lib/libexpat.so.1",
+    "lib/libexpat.so.1.11.2",
+    "lib/pkgconfig/expat.pc",
+    "share/doc/expat/AUTHORS",
+    "share/doc/expat/changelog"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/pkgconfig/expat.pc",
+        "prefix_placeholder": "/home/task_177006210476465/croot/expat-split_1770062509864/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "sha256": "3f6e0396e4dee61f3f5c4da8ddd0c68d29ff05d184b918a9f2e1444d66deb7f7",
+        "size_in_bytes": 528,
+        "sha256_in_prefix": "a4f3c3ea757ade1e2e29f348a950ade768ccaff3ab670dbe136be2ba064bd2f0"
+      }
+    ]
+  },
+  "link": {
+    "source": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/libexpat-2.7.4-h7354ed3_0",
+    "type": 1
+  }
+}

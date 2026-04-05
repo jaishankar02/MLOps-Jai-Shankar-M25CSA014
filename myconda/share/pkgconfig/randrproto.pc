@@ -1,0 +1,7 @@
+prefix=/csehome/m25csa014/Dlops_ass5/myconda
+includedir=${prefix}/include
+ 
+Name: RandrProto
+Description: Randr extension headers
+Version: 1.6.0
+Cflags: -I${includedir}

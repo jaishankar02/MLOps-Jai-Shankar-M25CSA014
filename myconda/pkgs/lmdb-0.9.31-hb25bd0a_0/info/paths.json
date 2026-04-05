@@ -1,0 +1,71 @@
+{
+  "paths": [
+    {
+      "_path": "bin/mdb_copy",
+      "path_type": "hardlink",
+      "sha256": "7d2be2f6ef533bce27e394bc14a47753de41715696581dac60f5eb40e7a3384f",
+      "size_in_bytes": 291816
+    },
+    {
+      "_path": "bin/mdb_dump",
+      "path_type": "hardlink",
+      "sha256": "6fb407ac4c749c41258f1756d9b1d875d64504c60280d093ec1fc7e3914c7b05",
+      "size_in_bytes": 307368
+    },
+    {
+      "_path": "bin/mdb_load",
+      "path_type": "hardlink",
+      "sha256": "d05a0e446a26575d5ec36d7fe056e2ccc9aec974063a1dbe91b44c62162a7978",
+      "size_in_bytes": 314456
+    },
+    {
+      "_path": "bin/mdb_stat",
+      "path_type": "hardlink",
+      "sha256": "79e6d672bc2b1b3ed8b11157a5cb19859dd45490b75f09a9f9e59f37dab4bfdf",
+      "size_in_bytes": 304896
+    },
+    {
+      "_path": "include/lmdb.h",
+      "path_type": "hardlink",
+      "sha256": "8316fc4df7f9c0a8f664c68e79900854f20726c0ee05510bd828c7818f88f9a7",
+      "size_in_bytes": 74013
+    },
+    {
+      "_path": "lib/liblmdb.a",
+      "path_type": "hardlink",
+      "sha256": "85c035dc5c2e52125357d36eebefbfcd352c7c7e30880f8a03e819103bd500fe",
+      "size_in_bytes": 336306
+    },
+    {
+      "_path": "lib/liblmdb.so",
+      "path_type": "hardlink",
+      "sha256": "741b5aa312727b1f8ccd8c5dee368a5487d8cb275ef3144cf72d29e2579cdb70",
+      "size_in_bytes": 290400
+    },
+    {
+      "_path": "share/man/man1/mdb_copy.1",
+      "path_type": "hardlink",
+      "sha256": "201bc00529e9ba25e7ad5dd3d6b1b830f22ceccde9352fd2975038e5c0b5aa2d",
+      "size_in_bytes": 1533
+    },
+    {
+      "_path": "share/man/man1/mdb_dump.1",
+      "path_type": "hardlink",
+      "sha256": "fd95dbe39786fd20f23dcafe227b5b0e3ffdf7bf6aa8fcaf924ecd8f35cefad9",
+      "size_in_bytes": 2197
+    },
+    {
+      "_path": "share/man/man1/mdb_load.1",
+      "path_type": "hardlink",
+      "sha256": "716c7e3443f0edd979d4f5a58faf0c532cb679b2ede5b25e321a2db4fb23be2a",
+      "size_in_bytes": 2636
+    },
+    {
+      "_path": "share/man/man1/mdb_stat.1",
+      "path_type": "hardlink",
+      "sha256": "ed3fe4a49d4ad208ce42911abe0fcaaf51d8a7ba9d83c9da438bb7c7b0759232",
+      "size_in_bytes": 1780
+    }
+  ],
+  "paths_version": 1
+}

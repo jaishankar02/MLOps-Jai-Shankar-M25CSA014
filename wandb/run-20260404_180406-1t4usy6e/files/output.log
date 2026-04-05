@@ -1,0 +1,51 @@
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Files already downloaded and verified
+Files already downloaded and verified
+                                                           
+Ep 01 | Loss 1.9547 | Acc 34.28%
+Ep 02 | Loss 1.4630 | Acc 46.84%
+Ep 03 | Loss 1.2667 | Acc 54.62%
+Ep 04 | Loss 1.1237 | Acc 59.97%
+Ep 05 | Loss 1.0328 | Acc 63.78%
+Ep 06 | Loss 0.9662 | Acc 66.20%
+Ep 07 | Loss 0.9148 | Acc 68.31%
+Ep 08 | Loss 0.8776 | Acc 69.51%
+Ep 09 | Loss 0.8523 | Acc 70.47%
+Ep 10 | Loss 0.8299 | Acc 71.14%
+Ep 11 | Loss 0.8058 | Acc 72.19%
+Ep 12 | Loss 0.7915 | Acc 72.69%
+Ep 13 | Loss 0.7769 | Acc 73.16%
+Ep 14 | Loss 0.7687 | Acc 73.60%
+Ep 15 | Loss 0.7550 | Acc 74.01%
+Ep 16 | Loss 0.5623 | Acc 80.62%
+Ep 17 | Loss 0.4981 | Acc 82.88%
+Ep 18 | Loss 0.4779 | Acc 83.59%
+Ep 19 | Loss 0.4567 | Acc 84.21%
+Ep 20 | Loss 0.4430 | Acc 84.63%
+Ep 21 | Loss 0.4280 | Acc 85.13%
+Ep 22 | Loss 0.4198 | Acc 85.43%
+Ep 23 | Loss 0.3824 | Acc 86.81%
+Ep 24 | Loss 0.3710 | Acc 87.11%
+Ep 25 | Loss 0.3641 | Acc 87.35%
+Ep 26 | Loss 0.3598 | Acc 87.60%
+Ep 27 | Loss 0.3573 | Acc 87.69%
+Ep 28 | Loss 0.3554 | Acc 87.74%
+Ep 29 | Loss 0.3472 | Acc 88.00%
+Ep 30 | Loss 0.3467 | Acc 88.15%
+
+Clean Test Accuracy: 84.36%
+FGSM Scratch ε=0.01: 71.02%
+FGSM Scratch ε=0.02: 56.88%
+FGSM Scratch ε=0.05: 26.88%
+FGSM Scratch ε=0.10: 7.54%
+FGSM Scratch ε=0.20: 1.87%
+Files already downloaded and verified
+FGSM ART   ε=0.01: 43.69%
+FGSM ART   ε=0.02: 21.62%
+FGSM ART   ε=0.05: 10.04%
+FGSM ART   ε=0.10: 7.75%
+FGSM ART   ε=0.20: 7.47%
+Files already downloaded and verified
+Files already downloaded and verified

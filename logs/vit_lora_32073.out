@@ -1,0 +1,228 @@
+Running on cn02
+Sat Apr  4 05:05:22 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.129.03             Driver Version: 535.129.03   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A30                     Off | 00000000:B1:00.0 Off |                    0 |
+| N/A   41C    P0              33W / 165W |      4MiB / 24576MiB |     16%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+
+============================================================
+Experiment: NoLoRA_HeadOnly
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 38,500
+Ep 01 | TrLoss 1.0793 TrAcc 72.36% | VaLoss 0.7020 VaAcc 79.38%
+Ep 02 | TrLoss 0.6349 TrAcc 81.14% | VaLoss 0.6637 VaAcc 80.20%
+Ep 03 | TrLoss 0.5613 TrAcc 83.07% | VaLoss 0.6386 VaAcc 80.70%
+Ep 04 | TrLoss 0.5182 TrAcc 84.21% | VaLoss 0.6449 VaAcc 80.92%
+Ep 05 | TrLoss 0.4890 TrAcc 85.00% | VaLoss 0.6374 VaAcc 81.24%
+Ep 06 | TrLoss 0.4636 TrAcc 85.70% | VaLoss 0.6230 VaAcc 81.40%
+Ep 07 | TrLoss 0.4347 TrAcc 86.50% | VaLoss 0.6194 VaAcc 81.34%
+Ep 08 | TrLoss 0.4207 TrAcc 87.10% | VaLoss 0.6143 VaAcc 82.08%
+Ep 09 | TrLoss 0.4101 TrAcc 87.41% | VaLoss 0.6169 VaAcc 81.42%
+Ep 10 | TrLoss 0.4021 TrAcc 87.65% | VaLoss 0.6112 VaAcc 82.06%
+
+Test Accuracy: 81.29%
+
+============================================================
+Experiment: LoRA_r2_a2_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 75,364
+Ep 01 | TrLoss 0.7348 TrAcc 80.83% | VaLoss 0.4055 VaAcc 87.36%
+Ep 02 | TrLoss 0.3345 TrAcc 89.44% | VaLoss 0.3640 VaAcc 88.46%
+Ep 03 | TrLoss 0.2691 TrAcc 91.33% | VaLoss 0.3716 VaAcc 88.38%
+Ep 04 | TrLoss 0.2269 TrAcc 92.64% | VaLoss 0.3789 VaAcc 88.82%
+Ep 05 | TrLoss 0.1940 TrAcc 93.66% | VaLoss 0.3742 VaAcc 88.58%
+Ep 06 | TrLoss 0.1675 TrAcc 94.53% | VaLoss 0.3742 VaAcc 89.12%
+Ep 07 | TrLoss 0.1495 TrAcc 95.08% | VaLoss 0.3690 VaAcc 88.96%
+Ep 08 | TrLoss 0.1324 TrAcc 95.72% | VaLoss 0.3640 VaAcc 89.22%
+Ep 09 | TrLoss 0.1217 TrAcc 96.23% | VaLoss 0.3664 VaAcc 89.42%
+Ep 10 | TrLoss 0.1154 TrAcc 96.48% | VaLoss 0.3577 VaAcc 89.34%
+
+Test Accuracy: 89.76%
+
+============================================================
+Experiment: LoRA_r2_a4_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 75,364
+Ep 01 | TrLoss 0.7302 TrAcc 80.78% | VaLoss 0.4158 VaAcc 87.10%
+Ep 02 | TrLoss 0.3304 TrAcc 89.64% | VaLoss 0.3784 VaAcc 88.06%
+Ep 03 | TrLoss 0.2649 TrAcc 91.51% | VaLoss 0.3769 VaAcc 87.78%
+Ep 04 | TrLoss 0.2223 TrAcc 92.76% | VaLoss 0.3781 VaAcc 88.68%
+Ep 05 | TrLoss 0.1874 TrAcc 93.75% | VaLoss 0.3714 VaAcc 88.86%
+Ep 06 | TrLoss 0.1597 TrAcc 94.77% | VaLoss 0.3689 VaAcc 88.86%
+Ep 07 | TrLoss 0.1386 TrAcc 95.55% | VaLoss 0.3759 VaAcc 88.72%
+Ep 08 | TrLoss 0.1234 TrAcc 96.22% | VaLoss 0.3706 VaAcc 89.12%
+Ep 09 | TrLoss 0.1135 TrAcc 96.47% | VaLoss 0.3610 VaAcc 89.38%
+Ep 10 | TrLoss 0.1063 TrAcc 96.90% | VaLoss 0.3544 VaAcc 89.16%
+
+Test Accuracy: 89.65%
+
+============================================================
+Experiment: LoRA_r2_a8_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 75,364
+Ep 01 | TrLoss 0.7131 TrAcc 81.14% | VaLoss 0.4154 VaAcc 87.36%
+Ep 02 | TrLoss 0.3327 TrAcc 89.65% | VaLoss 0.3901 VaAcc 88.26%
+Ep 03 | TrLoss 0.2685 TrAcc 91.30% | VaLoss 0.3789 VaAcc 88.56%
+Ep 04 | TrLoss 0.2235 TrAcc 92.70% | VaLoss 0.3787 VaAcc 88.26%
+Ep 05 | TrLoss 0.1894 TrAcc 93.76% | VaLoss 0.3844 VaAcc 87.92%
+Ep 06 | TrLoss 0.1601 TrAcc 94.71% | VaLoss 0.3783 VaAcc 88.84%
+Ep 07 | TrLoss 0.1375 TrAcc 95.50% | VaLoss 0.3803 VaAcc 88.48%
+Ep 08 | TrLoss 0.1192 TrAcc 96.28% | VaLoss 0.3618 VaAcc 88.70%
+Ep 09 | TrLoss 0.1075 TrAcc 96.72% | VaLoss 0.3663 VaAcc 89.16%
+Ep 10 | TrLoss 0.1017 TrAcc 97.00% | VaLoss 0.3771 VaAcc 88.50%
+
+Test Accuracy: 89.96%
+
+============================================================
+Experiment: LoRA_r4_a2_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 112,228
+Ep 01 | TrLoss 0.7337 TrAcc 80.78% | VaLoss 0.3941 VaAcc 87.32%
+Ep 02 | TrLoss 0.3287 TrAcc 89.73% | VaLoss 0.3785 VaAcc 88.08%
+Ep 03 | TrLoss 0.2603 TrAcc 91.62% | VaLoss 0.3715 VaAcc 88.68%
+Ep 04 | TrLoss 0.2197 TrAcc 92.74% | VaLoss 0.3631 VaAcc 88.48%
+Ep 05 | TrLoss 0.1841 TrAcc 93.98% | VaLoss 0.3788 VaAcc 88.78%
+Ep 06 | TrLoss 0.1593 TrAcc 94.77% | VaLoss 0.3593 VaAcc 89.10%
+Ep 07 | TrLoss 0.1375 TrAcc 95.59% | VaLoss 0.3721 VaAcc 88.96%
+Ep 08 | TrLoss 0.1217 TrAcc 96.14% | VaLoss 0.3601 VaAcc 89.14%
+Ep 09 | TrLoss 0.1105 TrAcc 96.70% | VaLoss 0.3748 VaAcc 88.92%
+Ep 10 | TrLoss 0.1036 TrAcc 96.88% | VaLoss 0.3706 VaAcc 89.16%
+
+Test Accuracy: 89.69%
+
+============================================================
+Experiment: LoRA_r4_a4_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 112,228
+Ep 01 | TrLoss 0.7143 TrAcc 81.17% | VaLoss 0.3976 VaAcc 87.30%
+Ep 02 | TrLoss 0.3263 TrAcc 89.69% | VaLoss 0.3762 VaAcc 88.32%
+Ep 03 | TrLoss 0.2565 TrAcc 91.70% | VaLoss 0.3751 VaAcc 88.66%
+Ep 04 | TrLoss 0.2109 TrAcc 93.07% | VaLoss 0.3718 VaAcc 88.46%
+Ep 05 | TrLoss 0.1759 TrAcc 94.21% | VaLoss 0.3777 VaAcc 88.40%
+Ep 06 | TrLoss 0.1459 TrAcc 95.20% | VaLoss 0.3769 VaAcc 88.54%
+Ep 07 | TrLoss 0.1270 TrAcc 95.89% | VaLoss 0.3733 VaAcc 89.22%
+Ep 08 | TrLoss 0.1080 TrAcc 96.58% | VaLoss 0.3760 VaAcc 88.86%
+Ep 09 | TrLoss 0.0998 TrAcc 96.92% | VaLoss 0.3719 VaAcc 88.72%
+Ep 10 | TrLoss 0.0921 TrAcc 97.27% | VaLoss 0.3735 VaAcc 88.84%
+
+Test Accuracy: 90.07%
+
+============================================================
+Experiment: LoRA_r4_a8_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 112,228
+Ep 01 | TrLoss 0.7129 TrAcc 80.99% | VaLoss 0.3997 VaAcc 87.32%
+Ep 02 | TrLoss 0.3196 TrAcc 89.86% | VaLoss 0.3823 VaAcc 87.94%
+Ep 03 | TrLoss 0.2542 TrAcc 91.68% | VaLoss 0.3736 VaAcc 88.42%
+Ep 04 | TrLoss 0.2074 TrAcc 93.24% | VaLoss 0.3712 VaAcc 88.76%
+Ep 05 | TrLoss 0.1723 TrAcc 94.34% | VaLoss 0.3738 VaAcc 89.18%
+Ep 06 | TrLoss 0.1383 TrAcc 95.60% | VaLoss 0.3827 VaAcc 88.70%
+Ep 07 | TrLoss 0.1163 TrAcc 96.28% | VaLoss 0.3613 VaAcc 89.38%
+Ep 08 | TrLoss 0.0987 TrAcc 96.95% | VaLoss 0.3735 VaAcc 89.10%
+Ep 09 | TrLoss 0.0896 TrAcc 97.39% | VaLoss 0.3722 VaAcc 89.54%
+Ep 10 | TrLoss 0.0815 TrAcc 97.70% | VaLoss 0.3698 VaAcc 89.34%
+
+Test Accuracy: 89.97%
+
+============================================================
+Experiment: LoRA_r8_a2_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 185,956
+Ep 01 | TrLoss 0.7283 TrAcc 80.98% | VaLoss 0.4067 VaAcc 87.52%
+Ep 02 | TrLoss 0.3281 TrAcc 89.69% | VaLoss 0.3867 VaAcc 88.04%
+Ep 03 | TrLoss 0.2589 TrAcc 91.60% | VaLoss 0.3829 VaAcc 88.42%
+Ep 04 | TrLoss 0.2158 TrAcc 93.06% | VaLoss 0.3652 VaAcc 89.14%
+Ep 05 | TrLoss 0.1824 TrAcc 94.00% | VaLoss 0.3766 VaAcc 88.62%
+Ep 06 | TrLoss 0.1550 TrAcc 94.91% | VaLoss 0.3748 VaAcc 89.04%
+Ep 07 | TrLoss 0.1316 TrAcc 95.71% | VaLoss 0.3680 VaAcc 88.92%
+Ep 08 | TrLoss 0.1174 TrAcc 96.29% | VaLoss 0.3662 VaAcc 89.18%
+Ep 09 | TrLoss 0.1071 TrAcc 96.77% | VaLoss 0.3623 VaAcc 89.04%
+Ep 10 | TrLoss 0.1010 TrAcc 96.97% | VaLoss 0.3726 VaAcc 89.14%
+
+Test Accuracy: 90.01%
+
+============================================================
+Experiment: LoRA_r8_a4_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 185,956
+Ep 01 | TrLoss 0.7165 TrAcc 81.01% | VaLoss 0.3932 VaAcc 87.78%
+Ep 02 | TrLoss 0.3262 TrAcc 89.82% | VaLoss 0.3784 VaAcc 88.46%
+Ep 03 | TrLoss 0.2526 TrAcc 91.76% | VaLoss 0.3766 VaAcc 88.36%
+Ep 04 | TrLoss 0.2079 TrAcc 93.23% | VaLoss 0.3838 VaAcc 88.56%
+Ep 05 | TrLoss 0.1734 TrAcc 94.33% | VaLoss 0.3781 VaAcc 88.86%
+Ep 06 | TrLoss 0.1402 TrAcc 95.39% | VaLoss 0.3796 VaAcc 88.92%
+Ep 07 | TrLoss 0.1170 TrAcc 96.32% | VaLoss 0.3711 VaAcc 89.22%
+Ep 08 | TrLoss 0.1012 TrAcc 96.84% | VaLoss 0.3686 VaAcc 89.26%
+Ep 09 | TrLoss 0.0924 TrAcc 97.16% | VaLoss 0.3781 VaAcc 89.16%
+Ep 10 | TrLoss 0.0839 TrAcc 97.60% | VaLoss 0.3656 VaAcc 89.22%
+
+Test Accuracy: 90.28%
+
+============================================================
+Experiment: LoRA_r8_a8_do0.1
+============================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 185,956
+Ep 01 | TrLoss 0.6957 TrAcc 81.55% | VaLoss 0.4076 VaAcc 87.38%
+Ep 02 | TrLoss 0.3169 TrAcc 90.00% | VaLoss 0.3671 VaAcc 88.88%
+Ep 03 | TrLoss 0.2496 TrAcc 91.99% | VaLoss 0.3675 VaAcc 89.14%
+Ep 04 | TrLoss 0.1949 TrAcc 93.61% | VaLoss 0.3732 VaAcc 88.72%
+Ep 05 | TrLoss 0.1555 TrAcc 94.88% | VaLoss 0.3743 VaAcc 88.92%
+Ep 06 | TrLoss 0.1235 TrAcc 95.94% | VaLoss 0.3777 VaAcc 89.18%
+Ep 07 | TrLoss 0.1000 TrAcc 96.81% | VaLoss 0.3602 VaAcc 89.30%
+Ep 08 | TrLoss 0.0834 TrAcc 97.49% | VaLoss 0.3718 VaAcc 89.46%
+Ep 09 | TrLoss 0.0729 TrAcc 97.92% | VaLoss 0.3741 VaAcc 89.30%
+Ep 10 | TrLoss 0.0678 TrAcc 98.07% | VaLoss 0.3737 VaAcc 89.58%
+
+Test Accuracy: 90.44%
+
+
+===== SUMMARY TABLE =====
+ Exp |         LoRA | Rank | Alpha |  Drop | TestAcc% |     Params
+------------------------------------------------------------------
+   0 | Without LoRA |  N/A |   N/A |   N/A |    81.29 |     38,500
+   1 |    With LoRA |    2 |     2 |   0.1 |    89.76 |     75,364
+   2 |    With LoRA |    2 |     4 |   0.1 |    89.65 |     75,364
+   3 |    With LoRA |    2 |     8 |   0.1 |    89.96 |     75,364
+   4 |    With LoRA |    4 |     2 |   0.1 |    89.69 |    112,228
+   5 |    With LoRA |    4 |     4 |   0.1 |    90.07 |    112,228
+   6 |    With LoRA |    4 |     8 |   0.1 |    89.97 |    112,228
+   7 |    With LoRA |    8 |     2 |   0.1 |    90.01 |    185,956
+   8 |    With LoRA |    8 |     4 |   0.1 |    90.28 |    185,956
+   9 |    With LoRA |    8 |     8 |   0.1 |    90.44 |    185,956
+
+Uploading best model (./checkpoints/q1/LoRA_r8_a8_do0.1_best.pt) to HuggingFace …

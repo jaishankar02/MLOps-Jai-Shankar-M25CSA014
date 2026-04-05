@@ -1,0 +1,25 @@
+{
+  "arch": "x86_64",
+  "build": "py313h7040dfc_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64/",
+  "constrains": [
+    "ipywidgets >=6"
+  ],
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "fn": "tqdm-4.67.3-py313h7040dfc_1.conda",
+  "license": "MPL-2.0 AND MIT",
+  "license_family": "MOZILLA",
+  "md5": "17b9f23e939b55ab9cab471b694a79d7",
+  "name": "tqdm",
+  "platform": "linux",
+  "sha256": "2dae6e5073fc7597727f5fc968f2a7be9fcb5f464d684d6d66d9e8664ab5baf6",
+  "size": 161112,
+  "subdir": "linux-64",
+  "timestamp": 1771398721000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/tqdm-4.67.3-py313h7040dfc_1.conda",
+  "version": "4.67.3"
+}

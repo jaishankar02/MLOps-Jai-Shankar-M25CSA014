@@ -1,0 +1,52 @@
+{
+  "name": "certifi",
+  "version": "2026.01.04",
+  "build": "py313h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "subdir": "linux-64",
+  "fn": "certifi-2026.01.04-py313h06a4308_0.conda",
+  "md5": "76d1efd083cb0251ec8295c355adb1e2",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/certifi-2026.01.04-py313h06a4308_0.conda",
+  "sha256": "dca4a436b34e5ab1f62a2dbbd0989e03e7ef375288c10f0b3bc95f1614095dba",
+  "arch": "x86_64",
+  "platform": "linux",
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "constrains": [],
+  "license": "MPL-2.0",
+  "license_family": "Other",
+  "timestamp": 1767659200000,
+  "size": 152128,
+  "requested_spec": "pkgs/main/linux-64::certifi==2026.01.04=py313h06a4308_0",
+  "package_tarball_full_path": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/certifi-2026.01.04-py313h06a4308_0.conda",
+  "extracted_package_dir": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/certifi-2026.01.04-py313h06a4308_0",
+  "files": [
+    "lib/python3.13/site-packages/certifi-2026.1.4.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/certifi-2026.1.4.dist-info/LICENSE",
+    "lib/python3.13/site-packages/certifi-2026.1.4.dist-info/METADATA",
+    "lib/python3.13/site-packages/certifi-2026.1.4.dist-info/RECORD",
+    "lib/python3.13/site-packages/certifi-2026.1.4.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/certifi-2026.1.4.dist-info/WHEEL",
+    "lib/python3.13/site-packages/certifi-2026.1.4.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/certifi-2026.1.4.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/certifi/__init__.py",
+    "lib/python3.13/site-packages/certifi/__main__.py",
+    "lib/python3.13/site-packages/certifi/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/certifi/__pycache__/__main__.cpython-313.pyc",
+    "lib/python3.13/site-packages/certifi/__pycache__/core.cpython-313.pyc",
+    "lib/python3.13/site-packages/certifi/cacert.pem",
+    "lib/python3.13/site-packages/certifi/core.py",
+    "lib/python3.13/site-packages/certifi/py.typed"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/certifi-2026.01.04-py313h06a4308_0",
+    "type": 1
+  }
+}

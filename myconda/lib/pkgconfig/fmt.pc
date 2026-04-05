@@ -1,0 +1,11 @@
+prefix=/csehome/m25csa014/Dlops_ass5/myconda
+exec_prefix=/csehome/m25csa014/Dlops_ass5/myconda
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fmt
+Description: A modern formatting library
+Version: 11.2.0
+Libs: -L${libdir} -lfmt
+Cflags: -I${includedir}
+

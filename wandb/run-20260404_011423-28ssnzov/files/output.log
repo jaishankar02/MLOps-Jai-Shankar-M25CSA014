@@ -1,0 +1,15 @@
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Downloading https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz to ./data/cifar-100-python.tar.gz
+100%|██████████| 169001437/169001437 [00:17<00:00, 9812418.39it/s] 
+Extracting ./data/cifar-100-python.tar.gz to ./data
+Files already downloaded and verified
+Trainable params: 38,500
+Ep 01 | TrLoss 1.0793 TrAcc 72.36% | VaLoss 0.7020 VaAcc 79.40%
+Ep 02 | TrLoss 0.6349 TrAcc 81.13% | VaLoss 0.6637 VaAcc 80.20%
+Ep 03 | TrLoss 0.5613 TrAcc 83.06% | VaLoss 0.6386 VaAcc 80.66%
+Ep 04 | TrLoss 0.5182 TrAcc 84.20% | VaLoss 0.6448 VaAcc 80.96%
+Ep 05 | TrLoss 0.4890 TrAcc 84.99% | VaLoss 0.6374 VaAcc 81.28%
+Ep 06 | TrLoss 0.4636 TrAcc 85.70% | VaLoss 0.6230 VaAcc 81.38%
+Ep 07 | TrLoss 0.4348 TrAcc 86.50% | VaLoss 0.6194 VaAcc 81.40%

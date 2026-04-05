@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "hb25bd0a_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64/",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc-ng >=11.2.0"
+  ],
+  "fn": "lmdb-0.9.31-hb25bd0a_0.conda",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "1468bc20414b0fa8eb1b18d3a916039f",
+  "name": "lmdb",
+  "platform": "linux",
+  "sha256": "839f0cd7e4a13088dcd9b8ac3213e8992725dd67f8e1a747c54132013b87d4b9",
+  "size": 480121,
+  "subdir": "linux-64",
+  "timestamp": 1754999718000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/lmdb-0.9.31-hb25bd0a_0.conda",
+  "version": "0.9.31"
+}

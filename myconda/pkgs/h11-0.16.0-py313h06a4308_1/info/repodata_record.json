@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "py313h06a4308_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64/",
+  "constrains": [],
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "fn": "h11-0.16.0-py313h06a4308_1.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "64c98017f4f5b701ed2b2f20d5e9ea4c",
+  "name": "h11",
+  "platform": "linux",
+  "sha256": "96dcaec2513ff1034fc52b8b13e5500d41b05671d85f8bff24895bf807129812",
+  "size": 64750,
+  "subdir": "linux-64",
+  "timestamp": 1761931277000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/h11-0.16.0-py313h06a4308_1.conda",
+  "version": "0.16.0"
+}

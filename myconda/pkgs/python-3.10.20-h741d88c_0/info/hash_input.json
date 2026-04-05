@@ -1,0 +1,22 @@
+{
+  "c_compiler_version": "14.3.0",
+  "libnsl": "2.0",
+  "ncurses": "6",
+  "readline": "8",
+  "cxx_compiler": "gxx",
+  "sqlite": "3",
+  "target_platform": "linux-64",
+  "c_compiler": "gcc",
+  "tk": "8.6",
+  "xorg_xorgproto": "2024",
+  "libuuid": "1",
+  "zlib": "1.3",
+  "bzip2": "1",
+  "channel_targets": "defaults",
+  "BUILD": "x86_64-conda_el8-linux-gnu",
+  "xz": "5",
+  "openssl": "3",
+  "expat": "2",
+  "cxx_compiler_version": "14.3.0",
+  "xorg_libx11": "1"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "wheel",
+  "version": "0.46.3",
+  "build": "py310h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "subdir": "linux-64",
+  "fn": "wheel-0.46.3-py310h06a4308_0.conda",
+  "md5": "5097ab51ca79b233026197da6d873dbf",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/wheel-0.46.3-py310h06a4308_0.conda",
+  "sha256": "a0c5617c4786eafbc0673fd9af656b68c6083e186a58730f56ac19dbb3b623c4",
+  "arch": "x86_64",
+  "platform": "linux",
+  "depends": [
+    "packaging >=24.0",
+    "python >=3.10,<3.11.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "license_family": "MIT",
+  "timestamp": 1769450262000,
+  "size": 55199
+}

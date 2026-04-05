@@ -1,0 +1,22 @@
+{
+  "name": "setuptools",
+  "version": "82.0.1",
+  "build": "py310h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "subdir": "linux-64",
+  "fn": "setuptools-82.0.1-py310h06a4308_0.conda",
+  "md5": "3e68108ec1d9ba8ec5fb6ee1f24c216a",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/setuptools-82.0.1-py310h06a4308_0.conda",
+  "sha256": "1ff3dcf85273ca02f4f49883d2b8cd8be25438984101a3d5989056389978c678",
+  "arch": "x86_64",
+  "platform": "linux",
+  "depends": [
+    "python >=3.10,<3.11.0a0"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "license_family": "MIT",
+  "timestamp": 1775048721000,
+  "size": 1273659
+}

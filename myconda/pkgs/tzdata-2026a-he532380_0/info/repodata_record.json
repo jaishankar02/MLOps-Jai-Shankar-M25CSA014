@@ -1,0 +1,20 @@
+{
+  "name": "tzdata",
+  "version": "2026a",
+  "build": "he532380_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "subdir": "noarch",
+  "fn": "tzdata-2026a-he532380_0.conda",
+  "md5": "b46d6837d6e1ceabdf40378de048c581",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/tzdata-2026a-he532380_0.conda",
+  "sha256": "bab9c667cb352cdbbc895b4aa8c867221e2e98d5310d884e494540c0b5c1efce",
+  "depends": [],
+  "constrains": [],
+  "noarch": "generic",
+  "license": "CC-PDDC OR BSD-3-Clause",
+  "license_family": "BSD",
+  "package_type": "noarch_generic",
+  "timestamp": 1772652196000,
+  "size": 120000
+}

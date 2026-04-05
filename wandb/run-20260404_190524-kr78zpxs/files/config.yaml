@@ -1,0 +1,105 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            h715rjhb5b0xa30cjd2nbiyiva06mbpv:
+                args:
+                    - --epochs
+                    - "20"
+                    - --wandb_key
+                    - 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
+                    - --eps
+                    - "0.03137"
+                codePath: q2_detection.py
+                codePathLocal: q2_detection.py
+                cpu_count: 32
+                cpu_count_logical: 32
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "75125227520"
+                        used: "24093069312"
+                email: m25csa014@iitj.ac.in
+                executable: /csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/bin/python
+                gpu: NVIDIA A30
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 3584
+                      memoryTotal: "25769803776"
+                      name: NVIDIA A30
+                      uuid: GPU-e8c4a634-88b4-4d2d-e2b4-3952778d10a9
+                host: cn05
+                memory:
+                    total: "269827092480"
+                os: Linux-4.18.0-372.9.1.el8.x86_64-x86_64-with-glibc2.28
+                program: /csehome/m25csa014/Dlops_ass5/q2_detection.py
+                python: CPython 3.10.20
+                root: /csehome/m25csa014/Dlops_ass5
+                slurm:
+                    cluster_name: csedpu
+                    conf: /etc/slurm/slurm.conf
+                    cpus_on_node: "4"
+                    cpus_per_task: "4"
+                    gpus_on_node: "1"
+                    gtids: "0"
+                    job_account: root
+                    job_cpus_per_node: "4"
+                    job_end_time: "1775439309"
+                    job_gid: "2004"
+                    job_gpus: "1"
+                    job_id: "32124"
+                    job_name: q2_detection
+                    job_nodelist: cn05
+                    job_num_nodes: "1"
+                    job_partition: mtech
+                    job_qos: normal
+                    job_start_time: "1775309709"
+                    job_uid: "2477"
+                    job_user: m25csa014
+                    jobid: "32124"
+                    localid: "0"
+                    mem_per_node: "16384"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: cn05
+                    nprocs: "1"
+                    ntasks: "1"
+                    prio_process: "0"
+                    procid: "0"
+                    submit_dir: /csehome/m25csa014/Dlops_ass5
+                    submit_host: login.cse.iitj.ac.in
+                    task_pid: "625777"
+                    tasks_per_node: "1"
+                    topology_addr: cn05
+                    topology_addr_pattern: node
+                    tres_per_task: cpu:4
+                startedAt: "2026-04-04T13:35:24.946037Z"
+                writerId: h715rjhb5b0xa30cjd2nbiyiva06mbpv
+        m: []
+        python_version: 3.10.20
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+            "3":
+                - 2
+                - 13
+            "4": 3.10.20
+            "5": 0.25.1
+            "6": 4.40.0
+            "10":
+                - 20
+            "12": 0.25.1
+            "13": linux-x86_64

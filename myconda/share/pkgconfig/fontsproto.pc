@@ -1,0 +1,7 @@
+prefix=/csehome/m25csa014/Dlops_ass5/myconda
+includedir=${prefix}/include
+ 
+Name: FontsProto
+Description: Fonts extension headers
+Version: 2.1.3
+Cflags: -I${includedir}

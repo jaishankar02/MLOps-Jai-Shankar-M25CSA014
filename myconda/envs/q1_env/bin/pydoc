@@ -1,0 +1,5 @@
+#!/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/bin/python3.10
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

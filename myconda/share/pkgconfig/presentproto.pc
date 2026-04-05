@@ -1,0 +1,7 @@
+prefix=/csehome/m25csa014/Dlops_ass5/myconda
+includedir=${prefix}/include
+ 
+Name: PresentProto
+Description: Present extension headers
+Version: 1.4
+Cflags: -I${includedir}

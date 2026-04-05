@@ -1,0 +1,513 @@
+wandb: [wandb.login()] Using explicit session credentials for https://api.wandb.ai.
+wandb: Appending key for api.wandb.ai to your netrc file: /csehome/m25csa014/.netrc
+wandb: Currently logged in as: m25csa014 (m25csa014-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run lctwu0xv
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_050615-lctwu0xv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run NoLoRA_HeadOnly
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/lctwu0xv
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+wandb: uploading artifact run-lctwu0xv-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-lctwu0xv-epoch_metrics_table
+wandb: uploading artifact run-lctwu0xv-epoch_metrics_table; uploading media/table/epoch_metrics_table_12_afc4776d8f37c4bbc991.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml (+ 1 more)
+wandb: uploading artifact run-lctwu0xv-epoch_metrics_table; uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_6e064b8d1ad111f966af.png
+wandb: uploading artifact run-lctwu0xv-epoch_metrics_table
+wandb: uploading history steps 11-12, summary
+wandb: 
+wandb: Run history:
+wandb:         epoch ▁▂▃▃▄▅▆▆▇█
+wandb: test_accuracy ▁
+wandb:     train_acc ▁▅▆▆▇▇▇███
+wandb:    train_loss █▃▃▂▂▂▁▁▁▁
+wandb:       val_acc ▁▃▄▅▆▆▆█▆█
+wandb:      val_loss █▅▃▄▃▂▂▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:         epoch 10
+wandb: test_accuracy 81.29
+wandb:     train_acc 87.65111
+wandb:    train_loss 0.40209
+wandb:       val_acc 82.06
+wandb:      val_loss 0.6112
+wandb: 
+wandb: 🚀 View run NoLoRA_HeadOnly at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/lctwu0xv
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_050615-lctwu0xv/logs
+wandb: setting up run uoqxm0hu
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_051220-uoqxm0hu
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r2_a2_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/uoqxm0hu
+wandb: uploading artifact run-uoqxm0hu-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-uoqxm0hu-epoch_metrics_table
+wandb: uploading artifact run-uoqxm0hu-epoch_metrics_table; uploading media/images/classwise_accuracy_histogram_11_2003c01ef2e4c12d815a.png; uploading media/table/epoch_metrics_table_12_c5711d9f006bac44cf28.table.json; uploading output.log; uploading wandb-summary.json (+ 1 more)
+wandb: uploading media/images/classwise_accuracy_histogram_11_2003c01ef2e4c12d815a.png; uploading media/table/epoch_metrics_table_12_c5711d9f006bac44cf28.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading media/table/epoch_metrics_table_12_c5711d9f006bac44cf28.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 10-12, summary, console lines 13-14
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm ▄▂▁██▆▄▁▂▁
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm █▂▆▄▇▄▆▂▂▁
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm ▅▂▂▅██▅▃▁▂
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm ▆▁▄▆█▇▅▃▁▁
+wandb: LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ▄▄▃█▇█▆▄▄▁
+wandb: LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm █▆▁▃▆▅▅▂▂▂
+wandb: LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm ▃▅▃▂▅▆█▇▁▃
+wandb: LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm ▆▅▃▆█▆▆▁▁▁
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm ▆▁▂▆██▆▄▃▃
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm ▇▃▃▄█▅▅▂▁▂
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.04924
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.131
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.04976
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.15467
+wandb: LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.0315
+wandb: LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.11339
+wandb: LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.05618
+wandb: LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.09684
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.04661
+wandb:  LoRA_r2_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.14066
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r2_a2_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/uoqxm0hu
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_051220-uoqxm0hu/logs
+wandb: setting up run yyb4z0wc
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_052003-yyb4z0wc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r2_a4_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/yyb4z0wc
+wandb: uploading artifact run-yyb4z0wc-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-yyb4z0wc-epoch_metrics_table
+wandb: uploading artifact run-yyb4z0wc-epoch_metrics_table; uploading media/images/classwise_accuracy_histogram_11_453980d2af2312ecf384.png; uploading media/table/epoch_metrics_table_12_f382d370cb885c922337.table.json; uploading output.log; uploading wandb-summary.json (+ 1 more)
+wandb: uploading media/table/epoch_metrics_table_12_f382d370cb885c922337.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 10-12, summary, console lines 13-14
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm ▃▇▆██▄▃▂▁▄
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm █▆▄▄▄▃▃▃▁▃
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm █▅▆▇▄▄▅▄▁▅
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm █▇▄▅▃▃▄▃▁▄
+wandb: LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ██▇▇▃▇▆▅▁▄
+wandb: LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm ▇▇▇▄▃█▆▄▁▄
+wandb: LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm █▂▆▅▃▃▅▄▁▂
+wandb: LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm █▃▄▄▃▂▃▃▁▂
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm ▇██▇▆▄▅▅▁▆
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm █▇▄▆▄▃▃▃▁▄
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.15337
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.27426
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.10879
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.25093
+wandb: LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.09203
+wandb: LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.21218
+wandb: LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.08987
+wandb: LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.17748
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.13531
+wandb:  LoRA_r2_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.3119
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r2_a4_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/yyb4z0wc
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_052003-yyb4z0wc/logs
+wandb: setting up run sq3slebw
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_052746-sq3slebw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r2_a8_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/sq3slebw
+wandb: uploading artifact run-sq3slebw-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-sq3slebw-epoch_metrics_table
+wandb: uploading media/table/epoch_metrics_table_12_1fde1417285ab6b1b0dc.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_3ecfe219f788af306f2a.png
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_3ecfe219f788af306f2a.png
+wandb: uploading media/images/classwise_accuracy_histogram_11_3ecfe219f788af306f2a.png
+wandb: uploading history steps 10-12, summary, console lines 13-14
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm ▃▅█▂▂▃▃▄▁▁
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm █▆█▃▂▄▄▄▁▁
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm ▇█▇▅▃▆▆▆▂▁
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm █▇█▃▃▅▆▅▁▁
+wandb: LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ▇█▇▄▃█▇▆▃▁
+wandb: LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm ▆▇█▅▃▅▃▄▂▁
+wandb: LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm █▇▆▃▂▆▅▆▂▁
+wandb: LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm ███▃▂▇▆▆▄▁
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm ▅▅█▄▄▇▇▅▁▁
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm ▆▄█▃▂▆▅▅▁▁
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.06354
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.10847
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.03642
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.09812
+wandb: LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.06331
+wandb: LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.12411
+wandb: LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.07774
+wandb: LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.08793
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.06382
+wandb:  LoRA_r2_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.11504
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r2_a8_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/sq3slebw
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_052746-sq3slebw/logs
+wandb: setting up run yywm3k3j
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_053528-yywm3k3j
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r4_a2_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/yywm3k3j
+wandb: uploading artifact run-yywm3k3j-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-yywm3k3j-epoch_metrics_table
+wandb: uploading artifact run-yywm3k3j-epoch_metrics_table; uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_964c53023c264ee600df.png (+ 1 more)
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_964c53023c264ee600df.png; uploading media/table/epoch_metrics_table_12_49e48486d54470e362ae.table.json
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_964c53023c264ee600df.png; uploading media/table/epoch_metrics_table_12_49e48486d54470e362ae.table.json
+wandb: uploading media/images/classwise_accuracy_histogram_11_964c53023c264ee600df.png
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm ▄▃▄▃▃█▇▁▃▅
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm █▆▅▅▄▄▄▁▂▃
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm ▇▄▇▄▇▅█▁▁▂
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm █▅▆▄▄▄▅▁▁▃
+wandb: LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ▄▂▅▃▆█▅▂▁▁
+wandb: LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm █▄▆▄▆▄▅▁▁▂
+wandb: LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm █▃▃█▆▂▄▅▁▂
+wandb: LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm █▄▆▂▄▅▃▄▁▂
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm █▃▄▃▃▃▃▁▁▂
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm █▅▆▄▄▄▅▁▁▂
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.06463
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.1415
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.03723
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.13026
+wandb: LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.03732
+wandb: LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.10635
+wandb: LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.0498
+wandb: LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.08105
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.0541
+wandb:  LoRA_r4_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.1318
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r4_a2_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/yywm3k3j
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_053528-yywm3k3j/logs
+wandb: setting up run mknoi1e5
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_054311-mknoi1e5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r4_a4_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/mknoi1e5
+wandb: uploading artifact run-mknoi1e5-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-mknoi1e5-epoch_metrics_table
+wandb: uploading artifact run-mknoi1e5-epoch_metrics_table; uploading media/images/classwise_accuracy_histogram_11_27119e2bfd389646685e.png; uploading media/table/epoch_metrics_table_12_ec7a0a51c45a2eeccf28.table.json; uploading output.log; uploading wandb-summary.json (+ 1 more)
+wandb: uploading media/images/classwise_accuracy_histogram_11_27119e2bfd389646685e.png; uploading media/table/epoch_metrics_table_12_ec7a0a51c45a2eeccf28.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 10-12, summary, console lines 13-14
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm ▅▃█▅▂▄▂▁▁▆
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm █▆▇▄▂▄▁▁▂▃
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm █▃▇▄▂▃▁▂▂▂
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm █▄▆▃▂▄▁▁▂▂
+wandb: LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ▆▄▅█▄▆▂▁▁▂
+wandb: LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm █▃▅▆▆▄▃▂▁▁
+wandb: LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm █▆▄▂▂▄▃▂▃▁
+wandb: LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm █▄▄▄▇▅▂▁▂▂
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm ▃▅█▄▁▃▁▂▁▃
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm █▇█▅▄▆▁▁▁▂
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.10693
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.20177
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.07035
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.15973
+wandb: LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.0767
+wandb: LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.13618
+wandb: LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.05663
+wandb: LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.11035
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.07577
+wandb:  LoRA_r4_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.16024
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r4_a4_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/mknoi1e5
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_054311-mknoi1e5/logs
+wandb: setting up run met5uxp3
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_055055-met5uxp3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r4_a8_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/met5uxp3
+wandb: uploading artifact run-met5uxp3-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-met5uxp3-epoch_metrics_table
+wandb: uploading artifact run-met5uxp3-epoch_metrics_table; uploading media/table/epoch_metrics_table_12_2175f16a43d0d2266c40.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml (+ 1 more)
+wandb: uploading media/table/epoch_metrics_table_12_2175f16a43d0d2266c40.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_73b9058a2a075103c18e.png
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_73b9058a2a075103c18e.png
+wandb: uploading history steps 10-12, summary, console lines 13-14
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm █▅▁█▄▃▃▃▂▁
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm █▄▂▄▃▃▂▂▁▁
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm █▅▁▆▅▅▆▃▂▁
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm █▃▁▃▂▁▂▂▁▁
+wandb: LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ▃▄▂█▅▄▅▆▂▁
+wandb: LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm ▆█▁▇▇▃▄▇▂▁
+wandb: LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm ▂▄▁█▄▂▂▄▁▁
+wandb: LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm █▄▁█▄▂▂▆▂▁
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm █▄▁█▅▃▃▄▁▁
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm █▃▁▄▂▂▃▃▁▁
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.10202
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.19595
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.08869
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.20818
+wandb: LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.10059
+wandb: LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.17704
+wandb: LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.15603
+wandb: LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.19744
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.12396
+wandb:  LoRA_r4_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.19809
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r4_a8_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/met5uxp3
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_055055-met5uxp3/logs
+wandb: setting up run tm15pjer
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_055839-tm15pjer
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r8_a2_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/tm15pjer
+wandb: uploading artifact run-tm15pjer-epoch_metrics_table; uploading history steps 10-11, summary, console lines 13-14; updating run metadata
+wandb: uploading artifact run-tm15pjer-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-tm15pjer-epoch_metrics_table
+wandb: uploading media/table/epoch_metrics_table_12_64a7f05870660fdca2ab.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_ec3d0deb13322e9481b8.png
+wandb: uploading wandb-summary.json; uploading config.yaml; uploading media/images/classwise_accuracy_histogram_11_ec3d0deb13322e9481b8.png
+wandb: uploading media/images/classwise_accuracy_histogram_11_ec3d0deb13322e9481b8.png
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm █▃▇▄▄▇▇▅▁▄
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm █▄▆▃▇█▃▃▁▁
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm ▃▁▅▂▄█▃▃▁▃
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm ▇▅▆▄▄█▄▅▁▅
+wandb: LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ▄▄▂▅█▄▅▇▄▁
+wandb: LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm █▃▂█▆▆▄▁▅▂
+wandb: LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm █▁▅▅▄▄▇▂▁█
+wandb: LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm █▅█▃▄▇▃▃▁▅
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm ▅▄▅▂▆█▃▄▁▆
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm ▆▄▅▃▆█▃▄▁▆
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.03036
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.06707
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.02735
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.09931
+wandb: LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.02313
+wandb: LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.06222
+wandb: LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.04762
+wandb: LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.06118
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.04044
+wandb:  LoRA_r8_a2_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.11171
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r8_a2_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/tm15pjer
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_055839-tm15pjer/logs
+wandb: setting up run bjfl2rc5
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_060618-bjfl2rc5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r8_a4_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/bjfl2rc5
+wandb: uploading artifact run-bjfl2rc5-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-bjfl2rc5-epoch_metrics_table
+wandb: uploading media/images/classwise_accuracy_histogram_11_7d41260b64b27575b2e9.png; uploading media/table/epoch_metrics_table_12_07435af13b822858d288.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading media/table/epoch_metrics_table_12_07435af13b822858d288.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm █▅▇▅▆▂▄▅▂▁
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm █▇▆▇▅▂▄▃▁▁
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm █▅▅▅▆▂▅▂▂▁
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm █▅▆▇▆▂▅▃▂▁
+wandb: LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ▆▅▇▇▇▄█▄▆▁
+wandb: LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm █▅▆█▆▅▇▄▆▁
+wandb: LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm ▆▅▅▇▆▃█▅▄▁
+wandb: LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm █▅▅▇▅▃▆▃▄▁
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm ▇▆██▇▂▇▄▂▁
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm █▄▆▆▇▂▅▃▂▁
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.02308
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.07422
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.02624
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.04926
+wandb: LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.01951
+wandb: LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.04214
+wandb: LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.02505
+wandb: LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.03916
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.02487
+wandb:  LoRA_r8_a4_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.05274
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r8_a4_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/bjfl2rc5
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_060618-bjfl2rc5/logs
+wandb: setting up run ot96a9k6
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_061439-ot96a9k6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run LoRA_r8_a8_do0.1
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/ot96a9k6
+wandb: uploading artifact run-ot96a9k6-epoch_metrics_table; updating run metadata
+wandb: uploading artifact run-ot96a9k6-epoch_metrics_table
+wandb: uploading artifact run-ot96a9k6-epoch_metrics_table; uploading media/images/classwise_accuracy_histogram_11_e8891ded8271d16e51e4.png; uploading media/table/epoch_metrics_table_12_a53d40a073ca28100ea0.table.json; uploading output.log; uploading wandb-summary.json (+ 1 more)
+wandb: uploading media/images/classwise_accuracy_histogram_11_e8891ded8271d16e51e4.png; uploading media/table/epoch_metrics_table_12_a53d40a073ca28100ea0.table.json; uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: 
+wandb: Run history:
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm ▂▂▂█▄▃▁▃▁▁
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm ▇▆▅▇▅█▃▄▁▂
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm ▃▄▆█▆█▂▂▁▂
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm ▅▆▆█▆█▃▃▁▂
+wandb: LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm ▃▄▄█▄▄▇▃▁▅
+wandb: LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm ▅▅▄█▅▄▅▃▁▃
+wandb: LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm ▃▄▇█▆▆▃▄▁▃
+wandb: LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm ▆▆▇█▅▅▂▆▁▃
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm ▄▅▅▆▇█▃▅▁▃
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm ▅▇▆██▇▃▄▁▂
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: Run summary:
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_A.default.weight_grad_norm 0.0851
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.0.attn.qkv.lora_B.default.weight_grad_norm 0.15251
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_A.default.weight_grad_norm 0.07587
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.1.attn.qkv.lora_B.default.weight_grad_norm 0.13231
+wandb: LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_A.default.weight_grad_norm 0.12752
+wandb: LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.10.attn.qkv.lora_B.default.weight_grad_norm 0.16135
+wandb: LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_A.default.weight_grad_norm 0.09573
+wandb: LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.11.attn.qkv.lora_B.default.weight_grad_norm 0.12813
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_A.default.weight_grad_norm 0.08347
+wandb:  LoRA_r8_a8_do0.1/lora_grad/base_model.model.blocks.2.attn.qkv.lora_B.default.weight_grad_norm 0.13015
+wandb:                                                                                            +20 ...
+wandb: 
+wandb: 🚀 View run LoRA_r8_a8_do0.1 at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100/runs/ot96a9k6
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_ViT_CIFAR100
+wandb: Synced 5 W&B file(s), 2 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_061439-ot96a9k6/logs
+Traceback (most recent call last):
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/api/models/Jaishankar02/vit-cifar100-lora/preupload/main
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/csehome/m25csa014/Dlops_ass5/q1_train.py", line 344, in <module>
+    main()
+  File "/csehome/m25csa014/Dlops_ass5/q1_train.py", line 333, in main
+    api.upload_file(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1286, in _inner
+    return fn(self, *args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 4374, in upload_file
+    commit_info = self.create_commit(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1286, in _inner
+    return fn(self, *args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 3677, in create_commit
+    self.preupload_lfs_files(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 4153, in preupload_lfs_files
+    _fetch_upload_modes(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/_commit_api.py", line 508, in _fetch_upload_modes
+    hf_raise_for_status(resp)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 352, in hf_raise_for_status
+    raise RepositoryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-69d060c6-7c2b072c5d8b93547fc63787;0200669d-49b2-4dc9-bceb-ea42c52b4501)
+
+Repository Not Found for url: https://huggingface.co/api/models/Jaishankar02/vit-cifar100-lora/preupload/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated.
+Note: Creating a commit assumes that the repo already exists on the Huggingface Hub. Please use `create_repo` if it's not the case.
+Traceback (most recent call last):
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/api/models/Jaishankar02/vit-cifar100-lora/preupload/main
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/csehome/m25csa014/Dlops_ass5/q1_train.py", line 344, in <module>
+    main()
+  File "/csehome/m25csa014/Dlops_ass5/q1_train.py", line 333, in main
+    api.upload_file(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1286, in _inner
+    return fn(self, *args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 4374, in upload_file
+    commit_info = self.create_commit(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1286, in _inner
+    return fn(self, *args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 3677, in create_commit
+    self.preupload_lfs_files(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 4153, in preupload_lfs_files
+    _fetch_upload_modes(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/_commit_api.py", line 508, in _fetch_upload_modes
+    hf_raise_for_status(resp)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 352, in hf_raise_for_status
+    raise RepositoryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-69d060c6-7c2b072c5d8b93547fc63787;0200669d-49b2-4dc9-bceb-ea42c52b4501)
+
+Repository Not Found for url: https://huggingface.co/api/models/Jaishankar02/vit-cifar100-lora/preupload/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated.
+Note: Creating a commit assumes that the repo already exists on the Huggingface Hub. Please use `create_repo` if it's not the case.

@@ -1,0 +1,22 @@
+{
+  "name": "libnsl",
+  "version": "2.0.0",
+  "build": "h5eee18b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "subdir": "linux-64",
+  "fn": "libnsl-2.0.0-h5eee18b_0.conda",
+  "md5": "55e3f1b0c2a70454cdf1a5d64fb44752",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/libnsl-2.0.0-h5eee18b_0.conda",
+  "sha256": "34fbadc1e86ee37b19b98799b4f806d8be205e9c0220bdb76598f0295961812e",
+  "arch": "x86_64",
+  "platform": "linux",
+  "depends": [
+    "libgcc-ng >=11.2.0"
+  ],
+  "constrains": [],
+  "license": "GPL-2.0-only",
+  "license_family": "GPL",
+  "timestamp": 1666886617000,
+  "size": 31754
+}

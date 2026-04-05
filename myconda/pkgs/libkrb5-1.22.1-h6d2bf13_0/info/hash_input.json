@@ -1,0 +1,18 @@
+{
+  "c_stdlib_version": "2.28",
+  "libedit": "3.1",
+  "BUILD": "x86_64-conda_el8-linux-gnu",
+  "target_platform": "linux-64",
+  "ncurses": "6",
+  "cxx_compiler": "gxx",
+  "gettext": "0",
+  "channel_targets": "defaults",
+  "openssl": "3",
+  "c_compiler_version": "14.3.0",
+  "lmdb": "0",
+  "cxx_compiler_version": "14.3.0",
+  "libkrb5": "1.21",
+  "c_stdlib": "sysroot",
+  "c_compiler": "gcc",
+  "__glibc": "__glibc >=2.28,<3.0.a0"
+}

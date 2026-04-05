@@ -1,0 +1,7 @@
+prefix=/csehome/m25csa014/Dlops_ass5/myconda
+includedir=${prefix}/include
+ 
+Name: XCMiscProto
+Description: XCMisc extension headers
+Version: 1.2.2
+Cflags: -I${includedir}

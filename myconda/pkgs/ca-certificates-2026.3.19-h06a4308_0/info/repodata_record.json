@@ -1,0 +1,20 @@
+{
+  "name": "ca-certificates",
+  "version": "2026.3.19",
+  "build": "h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "subdir": "linux-64",
+  "fn": "ca-certificates-2026.3.19-h06a4308_0.conda",
+  "md5": "291793559c71f945283cdb33962e7761",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/ca-certificates-2026.3.19-h06a4308_0.conda",
+  "sha256": "8a9aef8816cff77cfde5d9d90e45b67653bf5099b0f7c221cf0746da3461d95b",
+  "arch": "x86_64",
+  "platform": "linux",
+  "depends": [],
+  "constrains": [],
+  "license": "MPL-2.0",
+  "license_family": "Other",
+  "timestamp": 1774365804000,
+  "size": 128969
+}

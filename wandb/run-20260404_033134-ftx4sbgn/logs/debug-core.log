@@ -1,0 +1,14 @@
+{"time":"2026-04-04T03:31:35.449212207+05:30","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpwnx0lzws/port-578343.txt","pid":578343,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-04-04T03:31:35.450241247+05:30","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-578343-578355-1527919150/socket","Net":"unix"}}
+{"time":"2026-04-04T03:31:35.450450215+05:30","level":"INFO","msg":"server: will exit if parent process dies","ppid":578343}
+{"time":"2026-04-04T03:31:35.599077607+05:30","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-04-04T03:31:35.708847132+05:30","level":"INFO","msg":"handleInformInit: received","streamId":"ftx4sbgn","id":"1(@)"}
+{"time":"2026-04-04T03:31:36.440666769+05:30","level":"INFO","msg":"handleInformInit: stream started","streamId":"ftx4sbgn","id":"1(@)"}
+{"time":"2026-04-04T03:31:42.534152999+05:30","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"7qwbqnfqwq0d"}
+{"time":"2026-04-04T06:24:27.060475779+05:30","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"7qwbqnfqwq0d"}
+{"time":"2026-04-04T06:24:32.283418714+05:30","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"7qwbqnfqwq0d"}
+{"time":"2026-04-04T06:24:32.308677054+05:30","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"ftx4sbgn","id":"1(@)"}
+{"time":"2026-04-04T06:24:32.380684404+05:30","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"ftx4sbgn","id":"1(@)"}
+{"time":"2026-04-04T06:24:33.036045214+05:30","level":"INFO","msg":"handleInformInit: received","streamId":"iyiif7yx","id":"1(@)"}
+{"time":"2026-04-04T06:24:33.637105596+05:30","level":"INFO","msg":"handleInformInit: stream started","streamId":"iyiif7yx","id":"1(@)"}
+{"time":"2026-04-04T06:24:39.877067905+05:30","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"rsb10ijf25bn"}

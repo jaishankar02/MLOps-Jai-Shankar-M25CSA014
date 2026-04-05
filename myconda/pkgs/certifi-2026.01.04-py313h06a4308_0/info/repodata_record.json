@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "py313h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64/",
+  "constrains": [],
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "fn": "certifi-2026.01.04-py313h06a4308_0.conda",
+  "license": "MPL-2.0",
+  "license_family": "Other",
+  "md5": "76d1efd083cb0251ec8295c355adb1e2",
+  "name": "certifi",
+  "platform": "linux",
+  "sha256": "dca4a436b34e5ab1f62a2dbbd0989e03e7ef375288c10f0b3bc95f1614095dba",
+  "size": 152128,
+  "subdir": "linux-64",
+  "timestamp": 1767659200000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/certifi-2026.01.04-py313h06a4308_0.conda",
+  "version": "2026.01.04"
+}

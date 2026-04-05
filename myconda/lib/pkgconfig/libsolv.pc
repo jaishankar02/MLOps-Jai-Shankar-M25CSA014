@@ -1,0 +1,8 @@
+libdir=/csehome/m25csa014/Dlops_ass5/myconda/lib
+includedir=/csehome/m25csa014/Dlops_ass5/myconda/include
+
+Name: libsolv
+Description: Library for solving packages
+Version: 0.7.30
+Libs: -L${libdir} -lsolv
+Cflags: -I${includedir}

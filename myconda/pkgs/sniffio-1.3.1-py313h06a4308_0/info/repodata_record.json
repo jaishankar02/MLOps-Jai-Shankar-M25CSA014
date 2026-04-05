@@ -1,0 +1,23 @@
+{
+  "arch": "x86_64",
+  "build": "py313h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64/",
+  "constrains": [],
+  "depends": [
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313"
+  ],
+  "fn": "sniffio-1.3.1-py313h06a4308_0.conda",
+  "license": "MIT OR Apache-2.0",
+  "license_family": "Other",
+  "md5": "face17589cf2b386d76cc870234dfe6e",
+  "name": "sniffio",
+  "platform": "linux",
+  "sha256": "7bf4a958a0c21f733d6f218688b4e01b044ffbe11b41505d4092881617c119ab",
+  "size": 17447,
+  "subdir": "linux-64",
+  "timestamp": 1764329206000,
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/sniffio-1.3.1-py313h06a4308_0.conda",
+  "version": "1.3.1"
+}

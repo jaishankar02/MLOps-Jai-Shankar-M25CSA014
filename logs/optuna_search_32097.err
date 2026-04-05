@@ -1,0 +1,130 @@
+wandb: [wandb.login()] Using explicit session credentials for https://api.wandb.ai.
+wandb: Appending key for api.wandb.ai to your netrc file: /csehome/m25csa014/.netrc
+wandb: Currently logged in as: m25csa014 (m25csa014-iit-jodhpur) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: WARNING Using a boolean value for 'reinit' is deprecated. Use 'return_previous' or 'finish_previous' instead.
+wandb: setting up run dszwdr2y
+wandb: Tracking run with wandb version 0.25.1
+wandb: Run data is saved locally in /csehome/m25csa014/Dlops_ass5/wandb/run-20260404_155145-dszwdr2y
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run optuna_search
+wandb: ⭐️ View project at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_Optuna
+wandb: 🚀 View run at https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_Optuna/runs/dszwdr2y
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+[I 2026-04-04 15:51:48,013] A new study created in memory with name: no-name-127277e1-09f7-457c-82c5-f3b217c828ee
+  0%|          | 0/20 [00:00<?, ?it/s]                                        0%|          | 0/20 [03:11<?, ?it/s]Best trial: 0. Best value: 0.8954:   0%|          | 0/20 [03:11<?, ?it/s]Best trial: 0. Best value: 0.8954:   5%|▌         | 1/20 [03:11<1:00:46, 191.90s/it]                                                                                    Best trial: 0. Best value: 0.8954:   5%|▌         | 1/20 [06:21<1:00:46, 191.90s/it]Best trial: 0. Best value: 0.8954:   5%|▌         | 1/20 [06:21<1:00:46, 191.90s/it]Best trial: 0. Best value: 0.8954:  10%|█         | 2/20 [06:21<57:06, 190.36s/it]                                                                                    Best trial: 0. Best value: 0.8954:  10%|█         | 2/20 [09:30<57:06, 190.36s/it]Best trial: 0. Best value: 0.8954:  10%|█         | 2/20 [09:30<57:06, 190.36s/it]Best trial: 0. Best value: 0.8954:  15%|█▌        | 3/20 [09:30<53:47, 189.85s/it]                                                                                  Best trial: 0. Best value: 0.8954:  15%|█▌        | 3/20 [12:36<53:47, 189.85s/it]Best trial: 0. Best value: 0.8954:  15%|█▌        | 3/20 [12:36<53:47, 189.85s/it]Best trial: 0. Best value: 0.8954:  20%|██        | 4/20 [12:36<50:10, 188.17s/it]                                                                                  Best trial: 0. Best value: 0.8954:  20%|██        | 4/20 [15:42<50:10, 188.17s/it]Best trial: 0. Best value: 0.8954:  20%|██        | 4/20 [15:42<50:10, 188.17s/it]Best trial: 0. Best value: 0.8954:  25%|██▌       | 5/20 [15:42<46:51, 187.46s/it]                                                                                  Best trial: 0. Best value: 0.8954:  25%|██▌       | 5/20 [18:46<46:51, 187.46s/it]Best trial: 0. Best value: 0.8954:  25%|██▌       | 5/20 [18:46<46:51, 187.46s/it]Best trial: 0. Best value: 0.8954:  30%|███       | 6/20 [18:46<43:28, 186.33s/it]                                                                                  Best trial: 0. Best value: 0.8954:  30%|███       | 6/20 [21:47<43:28, 186.33s/it]Best trial: 0. Best value: 0.8954:  30%|███       | 6/20 [21:47<43:28, 186.33s/it]Best trial: 0. Best value: 0.8954:  35%|███▌      | 7/20 [21:47<40:00, 184.67s/it]                                                                                  Best trial: 0. Best value: 0.8954:  35%|███▌      | 7/20 [24:53<40:00, 184.67s/it]Best trial: 0. Best value: 0.8954:  35%|███▌      | 7/20 [24:53<40:00, 184.67s/it]Best trial: 0. Best value: 0.8954:  40%|████      | 8/20 [24:53<37:00, 185.06s/it]                                                                                  Best trial: 0. Best value: 0.8954:  40%|████      | 8/20 [28:02<37:00, 185.06s/it]Best trial: 0. Best value: 0.8954:  40%|████      | 8/20 [28:02<37:00, 185.06s/it]Best trial: 0. Best value: 0.8954:  45%|████▌     | 9/20 [28:02<34:08, 186.21s/it]                                                                                  Best trial: 0. Best value: 0.8954:  45%|████▌     | 9/20 [31:03<34:08, 186.21s/it]Best trial: 0. Best value: 0.8954:  45%|████▌     | 9/20 [31:03<34:08, 186.21s/it]Best trial: 0. Best value: 0.8954:  50%|█████     | 10/20 [31:03<30:47, 184.70s/it]                                                                                   Best trial: 0. Best value: 0.8954:  50%|█████     | 10/20 [34:12<30:47, 184.70s/it]Best trial: 0. Best value: 0.8954:  50%|█████     | 10/20 [34:12<30:47, 184.70s/it]Best trial: 0. Best value: 0.8954:  55%|█████▌    | 11/20 [34:12<27:53, 185.96s/it]                                                                                   Best trial: 0. Best value: 0.8954:  55%|█████▌    | 11/20 [37:21<27:53, 185.96s/it]Best trial: 0. Best value: 0.8954:  55%|█████▌    | 11/20 [37:21<27:53, 185.96s/it]Best trial: 0. Best value: 0.8954:  60%|██████    | 12/20 [37:21<24:54, 186.81s/it]                                                                                   Best trial: 0. Best value: 0.8954:  60%|██████    | 12/20 [40:30<24:54, 186.81s/it]Best trial: 12. Best value: 0.8968:  60%|██████    | 12/20 [40:30<24:54, 186.81s/it]Best trial: 12. Best value: 0.8968:  65%|██████▌   | 13/20 [40:30<21:52, 187.46s/it]                                                                                    Best trial: 12. Best value: 0.8968:  65%|██████▌   | 13/20 [45:48<21:52, 187.46s/it]Best trial: 12. Best value: 0.8968:  65%|██████▌   | 13/20 [45:48<21:52, 187.46s/it]Best trial: 12. Best value: 0.8968:  70%|███████   | 14/20 [45:48<22:41, 226.88s/it]                                                                                    Best trial: 12. Best value: 0.8968:  70%|███████   | 14/20 [48:56<22:41, 226.88s/it]Best trial: 12. Best value: 0.8968:  70%|███████   | 14/20 [48:56<22:41, 226.88s/it]Best trial: 12. Best value: 0.8968:  75%|███████▌  | 15/20 [48:56<17:56, 215.20s/it]                                                                                    Best trial: 12. Best value: 0.8968:  75%|███████▌  | 15/20 [52:04<17:56, 215.20s/it]Best trial: 12. Best value: 0.8968:  75%|███████▌  | 15/20 [52:04<17:56, 215.20s/it]Best trial: 12. Best value: 0.8968:  80%|████████  | 16/20 [52:04<13:48, 207.10s/it]                                                                                    Best trial: 12. Best value: 0.8968:  80%|████████  | 16/20 [55:12<13:48, 207.10s/it]Best trial: 12. Best value: 0.8968:  80%|████████  | 16/20 [55:12<13:48, 207.10s/it]Best trial: 12. Best value: 0.8968:  85%|████████▌ | 17/20 [55:12<10:03, 201.29s/it]                                                                                    Best trial: 12. Best value: 0.8968:  85%|████████▌ | 17/20 [58:20<10:03, 201.29s/it]Best trial: 17. Best value: 0.8972:  85%|████████▌ | 17/20 [58:20<10:03, 201.29s/it]Best trial: 17. Best value: 0.8972:  90%|█████████ | 18/20 [58:20<06:34, 197.37s/it]                                                                                    Best trial: 17. Best value: 0.8972:  90%|█████████ | 18/20 [1:01:28<06:34, 197.37s/it]Best trial: 18. Best value: 0.8978:  90%|█████████ | 18/20 [1:01:28<06:34, 197.37s/it]Best trial: 18. Best value: 0.8978:  95%|█████████▌| 19/20 [1:01:28<03:14, 194.69s/it]                                                                                      Best trial: 18. Best value: 0.8978:  95%|█████████▌| 19/20 [1:04:34<03:14, 194.69s/it]Best trial: 18. Best value: 0.8978:  95%|█████████▌| 19/20 [1:04:34<03:14, 194.69s/it]Best trial: 18. Best value: 0.8978: 100%|██████████| 20/20 [1:04:34<00:00, 192.07s/it]Best trial: 18. Best value: 0.8978: 100%|██████████| 20/20 [1:04:34<00:00, 193.75s/it]
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 31-31, summary, console lines 82-82
+wandb: 
+wandb: Run history:
+wandb:                alpha ▁
+wandb:       best_train_acc ▁▅▆▆▇▇████
+wandb:      best_train_loss █▃▃▂▂▁▁▁▁▁
+wandb:         best_val_acc █▁▄▂▅▅▆▆▆▅▆
+wandb:              dropout ▁
+wandb:                epoch ▁▂▃▃▄▅▆▆▇█
+wandb:                   lr ▁
+wandb: optuna_best_test_acc ▁
+wandb:                 rank ▁
+wandb:          trial_alpha ██▂▁▂▂█▄▄▁█▄▄█▄█▄▁▁▁
+wandb:                   +4 ...
+wandb: 
+wandb: Run summary:
+wandb:                alpha 2
+wandb:       best_train_acc 96.18889
+wandb:      best_train_loss 0.12492
+wandb:         best_val_acc 89.2
+wandb:              dropout 0.25
+wandb:                epoch 10
+wandb:                   lr 0.00083
+wandb: optuna_best_test_acc 90.01
+wandb:                 rank 4
+wandb:          trial_alpha 2
+wandb:                   +4 ...
+wandb: 
+wandb: 🚀 View run optuna_search at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_Optuna/runs/dszwdr2y
+wandb: ⭐️ View project at: https://wandb.ai/m25csa014-iit-jodhpur/Assignment5_Q1_Optuna
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260404_155145-dszwdr2y/logs
+Traceback (most recent call last):
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/api/models/Jaishankar02/vit-cifar100-lora-best/preupload/main
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/csehome/m25csa014/Dlops_ass5/q1_optuna.py", line 216, in <module>
+    main()
+  File "/csehome/m25csa014/Dlops_ass5/q1_optuna.py", line 207, in main
+    api.upload_file(path_or_fileobj=best_ckpt,
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1286, in _inner
+    return fn(self, *args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 4374, in upload_file
+    commit_info = self.create_commit(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1286, in _inner
+    return fn(self, *args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 3677, in create_commit
+    self.preupload_lfs_files(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 4153, in preupload_lfs_files
+    _fetch_upload_modes(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/_commit_api.py", line 508, in _fetch_upload_modes
+    hf_raise_for_status(resp)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 352, in hf_raise_for_status
+    raise RepositoryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-69d0f721-5022ae2b28f85d335dfa8fc4;14614c39-fdb5-483b-b64e-071a257dbfdc)
+
+Repository Not Found for url: https://huggingface.co/api/models/Jaishankar02/vit-cifar100-lora-best/preupload/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated.
+Note: Creating a commit assumes that the repo already exists on the Huggingface Hub. Please use `create_repo` if it's not the case.
+Traceback (most recent call last):
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+    response.raise_for_status()
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/requests/models.py", line 1028, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/api/models/Jaishankar02/vit-cifar100-lora-best/preupload/main
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/csehome/m25csa014/Dlops_ass5/q1_optuna.py", line 216, in <module>
+    main()
+  File "/csehome/m25csa014/Dlops_ass5/q1_optuna.py", line 207, in main
+    api.upload_file(path_or_fileobj=best_ckpt,
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1286, in _inner
+    return fn(self, *args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 4374, in upload_file
+    commit_info = self.create_commit(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 1286, in _inner
+    return fn(self, *args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 3677, in create_commit
+    self.preupload_lfs_files(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 4153, in preupload_lfs_files
+    _fetch_upload_modes(
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/_commit_api.py", line 508, in _fetch_upload_modes
+    hf_raise_for_status(resp)
+  File "/csehome/m25csa014/Dlops_ass5/myconda/envs/q1_env/lib/python3.10/site-packages/huggingface_hub/utils/_errors.py", line 352, in hf_raise_for_status
+    raise RepositoryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-69d0f721-5022ae2b28f85d335dfa8fc4;14614c39-fdb5-483b-b64e-071a257dbfdc)
+
+Repository Not Found for url: https://huggingface.co/api/models/Jaishankar02/vit-cifar100-lora-best/preupload/main.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated.
+Note: Creating a commit assumes that the repo already exists on the Huggingface Hub. Please use `create_repo` if it's not the case.

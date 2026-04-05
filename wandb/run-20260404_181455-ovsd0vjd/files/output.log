@@ -1,0 +1,29 @@
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Files already downloaded and verified
+Generating PGD adversarial examples …
+                                                                
+Generating BIM adversarial examples …
+Generating FGSM adversarial examples …
+Files already downloaded and verified
+Files already downloaded and verified
+
+=== Generating training adversarial examples (this may take a while) ===
+Generating PGD adversarial examples …
+Generating BIM adversarial examples …
+
+=== Training PGD Detector ===
+[PGD] Ep 01 | Loss 0.7089 | TrAcc 50.04% | VaAcc 49.61%
+[PGD] Ep 02 | Loss 0.6969 | TrAcc 52.92% | VaAcc 60.27%
+[PGD] Ep 03 | Loss 0.6676 | TrAcc 57.59% | VaAcc 73.99%
+[PGD] Ep 04 | Loss 0.3430 | TrAcc 84.33% | VaAcc 85.35%
+[PGD] Ep 05 | Loss 0.2040 | TrAcc 91.50% | VaAcc 87.31%
+[PGD] Ep 06 | Loss 0.1435 | TrAcc 94.22% | VaAcc 83.98%
+[PGD] Ep 07 | Loss 0.1085 | TrAcc 95.79% | VaAcc 93.12%
+[PGD] Ep 08 | Loss 0.0736 | TrAcc 97.22% | VaAcc 82.03%
+[PGD] Ep 09 | Loss 0.0566 | TrAcc 97.92% | VaAcc 77.65%
+[PGD] Ep 10 | Loss 0.0426 | TrAcc 98.45% | VaAcc 92.07%
+[PGD] Ep 11 | Loss 0.0332 | TrAcc 98.83% | VaAcc 89.78%
+[PGD] Ep 12 | Loss 0.0282 | TrAcc 99.01% | VaAcc 91.77%
+[PGD] Ep 13 | Loss 0.0185 | TrAcc 99.35% | VaAcc 98.21%

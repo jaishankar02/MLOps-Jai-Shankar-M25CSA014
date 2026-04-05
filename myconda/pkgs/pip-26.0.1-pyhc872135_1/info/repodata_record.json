@@ -1,0 +1,24 @@
+{
+  "name": "pip",
+  "version": "26.0.1",
+  "build": "pyhc872135_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "subdir": "noarch",
+  "fn": "pip-26.0.1-pyhc872135_1.conda",
+  "md5": "694138f71ea48d078f301a9a701bbc62",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/pip-26.0.1-pyhc872135_1.conda",
+  "sha256": "a3ffa3423f3a1c2a5184fd3e83c4555c9b6d627b0ed2e101b2ab615d585c1f40",
+  "depends": [
+    "python >=3.9,<3.14.0a0",
+    "setuptools",
+    "wheel"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "license_family": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1774988902000,
+  "size": 1178932
+}

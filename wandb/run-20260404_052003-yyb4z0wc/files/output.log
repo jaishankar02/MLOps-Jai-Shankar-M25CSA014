@@ -1,0 +1,15 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Trainable params: 75,364
+Ep 01 | TrLoss 0.7302 TrAcc 80.78% | VaLoss 0.4158 VaAcc 87.10%
+Ep 02 | TrLoss 0.3304 TrAcc 89.64% | VaLoss 0.3784 VaAcc 88.06%
+Ep 03 | TrLoss 0.2649 TrAcc 91.51% | VaLoss 0.3769 VaAcc 87.78%
+Ep 04 | TrLoss 0.2223 TrAcc 92.76% | VaLoss 0.3781 VaAcc 88.68%
+Ep 05 | TrLoss 0.1874 TrAcc 93.75% | VaLoss 0.3714 VaAcc 88.86%
+Ep 06 | TrLoss 0.1597 TrAcc 94.77% | VaLoss 0.3689 VaAcc 88.86%
+Ep 07 | TrLoss 0.1386 TrAcc 95.55% | VaLoss 0.3759 VaAcc 88.72%
+Ep 08 | TrLoss 0.1234 TrAcc 96.22% | VaLoss 0.3706 VaAcc 89.12%
+Ep 09 | TrLoss 0.1135 TrAcc 96.47% | VaLoss 0.3610 VaAcc 89.38%
+Ep 10 | TrLoss 0.1063 TrAcc 96.90% | VaLoss 0.3544 VaAcc 89.16%
+
+Test Accuracy: 89.65%

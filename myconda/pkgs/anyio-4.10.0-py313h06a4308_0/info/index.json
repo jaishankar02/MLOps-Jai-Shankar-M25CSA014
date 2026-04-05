@@ -1,0 +1,22 @@
+{
+  "arch": "x86_64",
+  "build": "py313h06a4308_0",
+  "build_number": 0,
+  "constrains": [
+    "uvloop >=0.21",
+    "trio >=0.26.1"
+  ],
+  "depends": [
+    "idna >=2.8",
+    "python >=3.13,<3.14.0a0",
+    "python_abi 3.13.* *_cp313",
+    "sniffio >=1.1"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "anyio",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1758622439930,
+  "version": "4.10.0"
+}

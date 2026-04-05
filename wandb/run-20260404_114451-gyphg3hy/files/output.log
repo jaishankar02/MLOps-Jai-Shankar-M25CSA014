@@ -1,0 +1,10 @@
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+[I 2026-04-04 11:44:53,849] A new study created in memory with name: no-name-07b32af9-36ac-4bca-a9fa-11cb9f08f27f
+Best trial: 0. Best value: 0.8908:   5%|▌         | 1/20 [3:04:30<58:25:46, 11070.86s/it]
+Files already downloaded and verified
+Files already downloaded and verified
+[I 2026-04-04 14:49:24,711] Trial 0 finished with value: 0.8908 and parameters: {'rank': 4, 'alpha': 16, 'dropout': 0.2, 'lr': 0.0015958573588141277}. Best is trial 0 with value: 0.8908.
+Files already downloaded and verified
+Files already downloaded and verified

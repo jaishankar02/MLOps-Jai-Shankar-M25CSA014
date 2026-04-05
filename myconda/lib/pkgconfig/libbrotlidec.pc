@@ -1,0 +1,12 @@
+prefix=/csehome/m25csa014/Dlops_ass5/myconda
+exec_prefix=/csehome/m25csa014/Dlops_ass5/myconda
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libbrotlidec
+URL: https://github.com/google/brotli
+Description: Brotli decoder library
+Version: 1.2.0
+Libs: -L${libdir} -lbrotlidec
+Requires.private: libbrotlicommon >= 1.2.0
+Cflags: -I${includedir}

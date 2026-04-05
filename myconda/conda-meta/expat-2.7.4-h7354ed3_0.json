@@ -1,0 +1,40 @@
+{
+  "name": "expat",
+  "version": "2.7.4",
+  "build": "h7354ed3_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "subdir": "linux-64",
+  "fn": "expat-2.7.4-h7354ed3_0.conda",
+  "md5": "575218bf09aa99037a6e3bb1f43796a8",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/expat-2.7.4-h7354ed3_0.conda",
+  "sha256": "6dc018cce7a88683c5e9b8ed14906ff342e8fee7307205123c588f9775a1b026",
+  "arch": "x86_64",
+  "platform": "linux",
+  "depends": [
+    "__glibc >=2.28,<3.0.a0",
+    "libexpat 2.7.4 h7354ed3_0",
+    "libgcc >=14",
+    "libstdcxx >=14"
+  ],
+  "constrains": [],
+  "license": "MIT",
+  "license_family": "MIT",
+  "timestamp": 1770062547000,
+  "size": 25302,
+  "requested_spec": "pkgs/main/linux-64::expat==2.7.4=h7354ed3_0",
+  "package_tarball_full_path": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/expat-2.7.4-h7354ed3_0.conda",
+  "extracted_package_dir": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/expat-2.7.4-h7354ed3_0",
+  "files": [
+    "bin/xmlwf",
+    "share/man/man1/xmlwf.1"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/csehome/m25csa014/Dlops_ass5/myconda/pkgs/expat-2.7.4-h7354ed3_0",
+    "type": 1
+  }
+}

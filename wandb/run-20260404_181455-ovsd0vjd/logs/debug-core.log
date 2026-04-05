@@ -1,0 +1,7 @@
+{"time":"2026-04-04T18:14:56.361765127+05:30","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpkftd1td_/port-2260025.txt","pid":2260025,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-04-04T18:14:56.365199594+05:30","level":"INFO","msg":"server: will exit if parent process dies","ppid":2260025}
+{"time":"2026-04-04T18:14:56.365123692+05:30","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-2260025-2260044-1199962624/socket","Net":"unix"}}
+{"time":"2026-04-04T18:14:56.482498166+05:30","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-04-04T18:14:56.51090639+05:30","level":"INFO","msg":"handleInformInit: received","streamId":"ovsd0vjd","id":"1(@)"}
+{"time":"2026-04-04T18:14:57.047952683+05:30","level":"INFO","msg":"handleInformInit: stream started","streamId":"ovsd0vjd","id":"1(@)"}
+{"time":"2026-04-04T18:15:03.250390288+05:30","level":"INFO","msg":"connection: cancelling request","id":"1(@)","requestId":"xiyyye9iie41"}

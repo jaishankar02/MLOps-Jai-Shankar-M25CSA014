@@ -1,0 +1,64 @@
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai/
+Files already downloaded and verified
+Generating PGD adversarial examples …
+                                                                
+Generating BIM adversarial examples …
+Generating FGSM adversarial examples …
+Files already downloaded and verified
+Files already downloaded and verified
+
+=== Generating training adversarial examples (this may take a while) ===
+Generating PGD adversarial examples …
+Generating BIM adversarial examples …
+
+=== Training PGD Detector ===
+[PGD] Ep 01 | Loss 0.7092 | TrAcc 50.42% | VaAcc 49.98%
+[PGD] Ep 02 | Loss 0.6111 | TrAcc 63.84% | VaAcc 79.16%
+[PGD] Ep 03 | Loss 0.2845 | TrAcc 87.44% | VaAcc 69.11%
+[PGD] Ep 04 | Loss 0.1999 | TrAcc 91.69% | VaAcc 74.24%
+[PGD] Ep 05 | Loss 0.1514 | TrAcc 93.92% | VaAcc 86.83%
+[PGD] Ep 06 | Loss 0.1083 | TrAcc 95.77% | VaAcc 95.63%
+[PGD] Ep 07 | Loss 0.0857 | TrAcc 96.65% | VaAcc 84.80%
+[PGD] Ep 08 | Loss 0.0595 | TrAcc 97.77% | VaAcc 83.41%
+[PGD] Ep 09 | Loss 0.0509 | TrAcc 98.11% | VaAcc 88.91%
+[PGD] Ep 10 | Loss 0.0376 | TrAcc 98.68% | VaAcc 97.03%
+[PGD] Ep 11 | Loss 0.0247 | TrAcc 99.13% | VaAcc 98.41%
+[PGD] Ep 12 | Loss 0.0205 | TrAcc 99.26% | VaAcc 94.23%
+[PGD] Ep 13 | Loss 0.0161 | TrAcc 99.45% | VaAcc 93.65%
+[PGD] Ep 14 | Loss 0.0114 | TrAcc 99.59% | VaAcc 99.18%
+[PGD] Ep 15 | Loss 0.0098 | TrAcc 99.65% | VaAcc 97.19%
+[PGD] Ep 16 | Loss 0.0049 | TrAcc 99.82% | VaAcc 99.21%
+[PGD] Ep 17 | Loss 0.0037 | TrAcc 99.87% | VaAcc 99.40%
+[PGD] Ep 18 | Loss 0.0016 | TrAcc 99.95% | VaAcc 99.34%
+[PGD] Ep 19 | Loss 0.0006 | TrAcc 99.97% | VaAcc 99.54%
+[PGD] Ep 20 | Loss 0.0004 | TrAcc 99.99% | VaAcc 99.54%
+
+=== Training BIM Detector ===
+[BIM] Ep 01 | Loss 0.7052 | TrAcc 52.39% | VaAcc 56.60%
+[BIM] Ep 02 | Loss 0.4477 | TrAcc 77.55% | VaAcc 86.93%
+[BIM] Ep 03 | Loss 0.2063 | TrAcc 91.23% | VaAcc 89.65%
+[BIM] Ep 04 | Loss 0.1226 | TrAcc 95.14% | VaAcc 85.04%
+[BIM] Ep 05 | Loss 0.0802 | TrAcc 97.01% | VaAcc 85.12%
+[BIM] Ep 06 | Loss 0.0617 | TrAcc 97.77% | VaAcc 63.30%
+[BIM] Ep 07 | Loss 0.0547 | TrAcc 98.03% | VaAcc 96.64%
+[BIM] Ep 08 | Loss 0.0346 | TrAcc 98.76% | VaAcc 98.73%
+[BIM] Ep 09 | Loss 0.0308 | TrAcc 98.90% | VaAcc 98.56%
+[BIM] Ep 10 | Loss 0.0239 | TrAcc 99.18% | VaAcc 95.00%
+[BIM] Ep 11 | Loss 0.0197 | TrAcc 99.29% | VaAcc 80.30%
+[BIM] Ep 12 | Loss 0.0173 | TrAcc 99.39% | VaAcc 99.06%
+[BIM] Ep 13 | Loss 0.0126 | TrAcc 99.54% | VaAcc 85.94%
+[BIM] Ep 14 | Loss 0.0098 | TrAcc 99.64% | VaAcc 99.20%
+[BIM] Ep 15 | Loss 0.0067 | TrAcc 99.74% | VaAcc 98.60%
+[BIM] Ep 16 | Loss 0.0038 | TrAcc 99.86% | VaAcc 99.52%
+[BIM] Ep 17 | Loss 0.0025 | TrAcc 99.92% | VaAcc 99.50%
+[BIM] Ep 18 | Loss 0.0008 | TrAcc 99.98% | VaAcc 99.63%
+[BIM] Ep 19 | Loss 0.0005 | TrAcc 99.98% | VaAcc 99.68%
+[BIM] Ep 20 | Loss 0.0003 | TrAcc 99.99% | VaAcc 99.64%
+
+=== Detection Results ===
+PGD Detector Test Accuracy: 99.43%
+BIM Detector Test Accuracy: 99.64%
+Saved pgd detector to ./checkpoints/q2/detector_pgd_final.pt
+Saved bim detector to ./checkpoints/q2/detector_bim_final.pt
